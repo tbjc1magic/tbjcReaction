@@ -1,0 +1,54 @@
+	
+{
+    "Reaction":
+    {
+        "Elements":
+        {
+            "p0":{"Z":10,"A":20},
+            "p1":{"Z":1,"A":2},
+            "p2":
+            {
+                "Z":10,"A":21,
+                 "ExChance":
+                     [
+                     {"Ex":0,      "Chance":1},
+                     {"Ex":0.35, "Chance":1},
+                     {"Ex":2.796,      "Chance":1},
+                     {"Ex":3.8,      "Chance":1},
+                     {"Ex":4.728,      "Chance":1},
+                     {"Ex":5.822,      "Chance":1},
+                     {"Ex":6.61,"Chance":1},
+                     ]
+            },
+            "p3":{"Z":1,"A":1}
+        },
+         "BeamEnergy":"107*MeV"
+    
+    }, 
+
+
+    "Target":
+    {
+  
+        "SolidTarget":
+        {
+            "TargetPosition":"-10*cm",
+            "SolidTargetRadius":"5*cm",
+            "TargetMaterial":"tbjcCD2",
+            "SolidTargetThickness":"6.67*um",
+            "ReactionLifeLength":"12*um",
+            "BlockerRadius":"30*cm",
+            "BlockRecoils":1           }
+
+
+    },
+
+    "IonChamber":
+    {
+        "IonChamberGasType":"tbjcCF4",
+        "IonChamberGasP":"33*torr",
+        "IonChamberGasT":"293*K"
+    }
+       
+
+}

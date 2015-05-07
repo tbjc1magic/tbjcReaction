@@ -1,0 +1,3016 @@
+
+*************************************************************
+ Geant4 version Name: geant4-10-00-patch-01 [MT]   (28-February-2014)
+  << in Multi-threaded mode >> 
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+ G4Material WARNING: define a material with density=0 is not allowed. 
+ The material Vacuum will be constructed with the default minimal density: 1e-25g/cm3
+--- Warning from G4Material::G4Material() define a material with density=0 is not allowed. 
+ The material tbjcVacuum will be constructed with the default minimal density: 1e-25g/cm3
+Checking overlaps for volume HELIOS ... OK! 
+Checking overlaps for volume blocker_physical ... OK! 
+Checking overlaps for volume DownFrame_physical ... OK! 
+Checking overlaps for volume targetGas_physical ... OK! 
+Checking overlaps for volume targetWindow_physical ... OK! 
+Checking overlaps for volume targetWindow_physical ... OK! 
+Checking overlaps for volume ArrayContainer ... OK! 
+Checking overlaps for volume ArraySupport ... OK! 
+Checking overlaps for volume HELIOSback_physical ... OK! 
+Checking overlaps for volume HELIOSfront_physical ... OK! 
+Checking overlaps for volume heliosdoor_physical ... OK! 
+Checking overlaps for volume ionfront_physical ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume ionfront_physical
+          with heliosdoor_physical volume's
+          local point (-66.6927,-95.2202,38.4401), overlapping by at least: 226.56 um 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume IONshell_physical ... OK! 
+Checking overlaps for volume IONstartInside_physical ... OK! 
+Checking overlaps for volume IONwindow_physical ... OK! 
+Checking overlaps for volume IONinside_physical ... OK! 
+Checking overlaps for volume DEADSPACE ... OK! 
+Checking overlaps for volume Sec1 ... OK! 
+Checking overlaps for volume Sec2 ... OK! 
+Checking overlaps for volume Sec3 ... OK! 
+Checking overlaps for volume Sec4 ... OK! 
+Checking overlaps for volume Sec5 ... OK! 
+consctruct complete
+G4VDecayChannel::FillDaughters  [ eta_prime ]0:rho0 is not defined !!
+ The BR of this decay mode is set to zero 
+G4WT0 > 
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >  Local thread RunManagerKernel version Name: geant4-10-00-patch-01 [MT]
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 > 
+heyhey step creater
+G4WT0 > 
+G4WT0 > phot:   for  gamma    SubType= 12
+G4WT0 >       LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >        PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+G4WT0 > 
+G4WT0 > compt:   for  gamma    SubType= 13
+G4WT0 >       Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+G4WT0 >       LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >         KleinNishina :  Emin=        0 eV    Emax=       10 TeV
+G4WT0 > 
+G4WT0 > conv:   for  gamma    SubType= 14
+G4WT0 >       Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >         BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+G4WT0 >      BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+G4WT0 > 
+G4WT0 > msc:   for e-    SubType= 10
+G4WT0 >       RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >             UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+Available UI session types: [ GAG, tcsh, csh ]
+/control/saveHistory
+/run/verbose 2
+#
+# Visualization setting
+/control/execute vis.mac
+#
+# Macro file for exampleB5
+#
+# Set verbosity
+#
+/control/verbose 2
+#
+# Use this open statement to create an OpenGL view:
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+libGL error: failed to load driver: swrast
+/vis/viewer/refresh
+#
+# Use this open statement to create a .prim file suitable for
+# viewing in DAWN:
+#/vis/open DAWNFILE
+#
+# Use this open statement to create a .heprep file suitable for
+# viewing in HepRApp:
+#/vis/open HepRepFile
+#
+# Use this open statement to create a .wrl file suitable for
+# viewing in a VRML viewer:
+#/vis/open VRML2FILE
+#
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+Visualization verbosity changed to errors (2)
+#
+# Draw geometry:
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world
+/vis/sceneHandler/attach
+#
+# Specify view angle:
+#/vis/viewer/set/viewpointThetaPhi 90. 0.
+#
+# Specify zoom value:
+/vis/viewer/zoom 1.2
+#
+# Specify style (surface or wireframe):
+#/vis/viewer/set/style wireframe
+#
+# Draw coordinate axes:
+#/vis/scene/add/axes 0 0 0 1 m
+#
+# Draw smooth trajectories at end of event, showing trajectory points
+# as markers 2 pixels wide:
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+#
+# Draw hits at end of event:
+#/vis/scene/add/hits
+#
+# To draw only gammas:
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add gamma
+#
+# To invert the above, drawing all particles except gammas,
+# keep the above two lines but also add:
+#/vis/filtering/trajectories/particleFilter-0/invert true
+#
+# Many other options are available with /vis/modeling and /vis/filtering.
+# For example, to select colour by particle ID:
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+#
+# To superimpose all of the events from a given run:
+#/vis/scene/endOfEventAction accumulate
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+Polyhedron::SetReferences: List 35240 is not empty
+Polyhedron::SetReferences: List 35241 is not empty
+Polyhedron::SetReferences: List 35242 is not empty
+Polyhedron::SetReferences: List 35243 is not empty
+Polyhedron::SetReferences: List 35244 is not empty
+Polyhedron::SetReferences: List 35245 is not empty
+Polyhedron::SetReferences: List 35247 is not empty
+Polyhedron::SetReferences: List 35248 is not empty
+Polyhedron::SetReferences: List 35249 is not empty
+Polyhedron::SetReferences: List 35250 is not empty
+Polyhedron::SetReferences: List 35251 is not empty
+Polyhedron::SetReferences: List 35252 is not empty
+Polyhedron::SetReferences: List 35253 is not empty
+Polyhedron::SetReferences: List 35254 is not empty
+Polyhedron::SetReferences: List 35255 is not empty
+Polyhedron::SetReferences: List 35256 is not empty
+Polyhedron::SetReferences: List 35257 is not empty
+Polyhedron::SetReferences: List 35258 is not empty
+Polyhedron::SetReferences: List 35259 is not empty
+Polyhedron::SetReferences: List 35260 is not empty
+Polyhedron::SetReferences: List 35262 is not empty
+Polyhedron::SetReferences: List 35263 is not empty
+Polyhedron::SetReferences: List 35264 is not empty
+Polyhedron::SetReferences: List 35265 is not empty
+Polyhedron::SetReferences: List 35266 is not empty
+Polyhedron::SetReferences: List 35428 is not empty
+Polyhedron::SetReferences: List 35429 is not empty
+Polyhedron::SetReferences: List 35430 is not empty
+Polyhedron::SetReferences: List 35431 is not empty
+Polyhedron::SetReferences: List 35432 is not empty
+Polyhedron::SetReferences: List 35433 is not empty
+Polyhedron::SetReferences: List 35434 is not empty
+Polyhedron::SetReferences: List 35435 is not empty
+Polyhedron::SetReferences: List 35436 is not empty
+Polyhedron::SetReferences: List 35437 is not empty
+Polyhedron::SetReferences: List 35438 is not empty
+Polyhedron::SetReferences: List 35439 is not empty
+Polyhedron::SetReferences: List 35440 is not empty
+Polyhedron::SetReferences: List 35441 is not empty
+Polyhedron::SetReferences: List 35442 is not empty
+Polyhedron::SetReferences: List 35443 is not empty
+Polyhedron::SetReferences: List 35444 is not empty
+Polyhedron::SetReferences: List 35445 is not empty
+Polyhedron::SetReferences: List 35446 is not empty
+Polyhedron::SetReferences: List 35447 is not empty
+Polyhedron::SetReferences: List 35448 is not empty
+Polyhedron::SetReferences: List 35450 is not empty
+Polyhedron::SetReferences: List 35451 is not empty
+Polyhedron::SetReferences: List 35452 is not empty
+Polyhedron::SetReferences: List 35453 is not empty
+Polyhedron::SetReferences: List 35454 is not empty
+Polyhedron::SetReferences: List 35648 is not empty
+Polyhedron::SetReferences: List 35649 is not empty
+Polyhedron::SetReferences: List 35650 is not empty
+Polyhedron::SetReferences: List 35651 is not empty
+Polyhedron::SetReferences: List 35652 is not empty
+Polyhedron::SetReferences: List 35653 is not empty
+Polyhedron::SetReferences: List 35655 is not empty
+Polyhedron::SetReferences: List 35656 is not empty
+Polyhedron::SetReferences: List 35657 is not empty
+Polyhedron::SetReferences: List 35658 is not empty
+Polyhedron::SetReferences: List 35659 is not empty
+Polyhedron::SetReferences: List 35660 is not empty
+Polyhedron::SetReferences: List 35661 is not empty
+Polyhedron::SetReferences: List 35662 is not empty
+Polyhedron::SetReferences: List 35663 is not empty
+Polyhedron::SetReferences: List 35664 is not empty
+Polyhedron::SetReferences: List 35665 is not empty
+Polyhedron::SetReferences: List 35666 is not empty
+Polyhedron::SetReferences: List 35667 is not empty
+Polyhedron::SetReferences: List 35668 is not empty
+Polyhedron::SetReferences: List 35670 is not empty
+Polyhedron::SetReferences: List 35671 is not empty
+Polyhedron::SetReferences: List 35672 is not empty
+Polyhedron::SetReferences: List 35673 is not empty
+Polyhedron::SetReferences: List 35674 is not empty
+Polyhedron::SetReferences: List 35868 is not empty
+Polyhedron::SetReferences: List 35869 is not empty
+Polyhedron::SetReferences: List 35870 is not empty
+Polyhedron::SetReferences: List 35871 is not empty
+Polyhedron::SetReferences: List 35872 is not empty
+Polyhedron::SetReferences: List 35873 is not empty
+Polyhedron::SetReferences: List 35875 is not empty
+Polyhedron::SetReferences: List 35876 is not empty
+Polyhedron::SetReferences: List 35877 is not empty
+Polyhedron::SetReferences: List 35878 is not empty
+Polyhedron::SetReferences: List 35879 is not empty
+Polyhedron::SetReferences: List 35880 is not empty
+Polyhedron::SetReferences: List 35881 is not empty
+Polyhedron::SetReferences: List 35882 is not empty
+Polyhedron::SetReferences: List 35883 is not empty
+Polyhedron::SetReferences: List 35884 is not empty
+Polyhedron::SetReferences: List 35885 is not empty
+Polyhedron::SetReferences: List 35886 is not empty
+Polyhedron::SetReferences: List 35887 is not empty
+Polyhedron::SetReferences: List 35888 is not empty
+Polyhedron::SetReferences: List 35890 is not empty
+Polyhedron::SetReferences: List 35891 is not empty
+Polyhedron::SetReferences: List 35892 is not empty
+Polyhedron::SetReferences: List 35893 is not empty
+Polyhedron::SetReferences: List 35894 is not empty
+Polyhedron::SetReferences: List 36088 is not empty
+Polyhedron::SetReferences: List 36089 is not empty
+Polyhedron::SetReferences: List 36090 is not empty
+Polyhedron::SetReferences: List 36091 is not empty
+Polyhedron::SetReferences: List 36092 is not empty
+Polyhedron::SetReferences: List 36093 is not empty
+Polyhedron::SetReferences: List 36095 is not empty
+Polyhedron::SetReferences: List 36096 is not empty
+Polyhedron::SetReferences: List 36097 is not empty
+Polyhedron::SetReferences: List 36098 is not empty
+Polyhedron::SetReferences: List 36099 is not empty
+Polyhedron::SetReferences: List 36100 is not empty
+Polyhedron::SetReferences: List 36101 is not empty
+Polyhedron::SetReferences: List 36102 is not empty
+Polyhedron::SetReferences: List 36103 is not empty
+Polyhedron::SetReferences: List 36104 is not empty
+Polyhedron::SetReferences: List 36105 is not empty
+Polyhedron::SetReferences: List 36106 is not empty
+Polyhedron::SetReferences: List 36107 is not empty
+Polyhedron::SetReferences: List 36108 is not empty
+Polyhedron::SetReferences: List 36110 is not empty
+Polyhedron::SetReferences: List 36111 is not empty
+Polyhedron::SetReferences: List 36112 is not empty
+Polyhedron::SetReferences: List 36113 is not empty
+Polyhedron::SetReferences: List 36114 is not empty
+Polyhedron::SetReferences: List 36308 is not empty
+Polyhedron::SetReferences: List 36309 is not empty
+Polyhedron::SetReferences: List 36310 is not empty
+Polyhedron::SetReferences: List 36311 is not empty
+Polyhedron::SetReferences: List 36312 is not empty
+Polyhedron::SetReferences: List 36313 is not empty
+Polyhedron::SetReferences: List 36315 is not empty
+Polyhedron::SetReferences: List 36316 is not empty
+Polyhedron::SetReferences: List 36317 is not empty
+Polyhedron::SetReferences: List 36318 is not empty
+Polyhedron::SetReferences: List 36319 is not empty
+Polyhedron::SetReferences: List 36320 is not empty
+Polyhedron::SetReferences: List 36321 is not empty
+Polyhedron::SetReferences: List 36322 is not empty
+Polyhedron::SetReferences: List 36323 is not empty
+Polyhedron::SetReferences: List 36324 is not empty
+Polyhedron::SetReferences: List 36325 is not empty
+Polyhedron::SetReferences: List 36326 is not empty
+Polyhedron::SetReferences: List 36327 is not empty
+Polyhedron::SetReferences: List 36328 is not empty
+Polyhedron::SetReferences: List 36330 is not empty
+Polyhedron::SetReferences: List 36331 is not empty
+Polyhedron::SetReferences: List 36332 is not empty
+Polyhedron::SetReferences: List 36333 is not empty
+Polyhedron::SetReferences: List 36334 is not empty
+Polyhedron::SetReferences: List 36528 is not empty
+Polyhedron::SetReferences: List 36529 is not empty
+Polyhedron::SetReferences: List 36530 is not empty
+Polyhedron::SetReferences: List 36531 is not empty
+Polyhedron::SetReferences: List 36532 is not empty
+Polyhedron::SetReferences: List 36533 is not empty
+Polyhedron::SetReferences: List 36535 is not empty
+Polyhedron::SetReferences: List 36536 is not empty
+Polyhedron::SetReferences: List 36537 is not empty
+Polyhedron::SetReferences: List 36538 is not empty
+Polyhedron::SetReferences: List 36539 is not empty
+Polyhedron::SetReferences: List 36540 is not empty
+Polyhedron::SetReferences: List 36541 is not empty
+Polyhedron::SetReferences: List 36542 is not empty
+Polyhedron::SetReferences: List 36543 is not empty
+Polyhedron::SetReferences: List 36544 is not empty
+Polyhedron::SetReferences: List 36545 is not empty
+Polyhedron::SetReferences: List 36546 is not empty
+Polyhedron::SetReferences: List 36547 is not empty
+Polyhedron::SetReferences: List 36548 is not empty
+Polyhedron::SetReferences: List 36550 is not empty
+Polyhedron::SetReferences: List 36551 is not empty
+Polyhedron::SetReferences: List 36552 is not empty
+Polyhedron::SetReferences: List 36553 is not empty
+Polyhedron::SetReferences: List 36554 is not empty
+Polyhedron::SetReferences: List 36748 is not empty
+Polyhedron::SetReferences: List 36749 is not empty
+Polyhedron::SetReferences: List 36750 is not empty
+Polyhedron::SetReferences: List 36751 is not empty
+Polyhedron::SetReferences: List 36752 is not empty
+Polyhedron::SetReferences: List 36753 is not empty
+Polyhedron::SetReferences: List 36755 is not empty
+Polyhedron::SetReferences: List 36756 is not empty
+Polyhedron::SetReferences: List 36757 is not empty
+Polyhedron::SetReferences: List 36758 is not empty
+Polyhedron::SetReferences: List 36759 is not empty
+Polyhedron::SetReferences: List 36760 is not empty
+Polyhedron::SetReferences: List 36761 is not empty
+Polyhedron::SetReferences: List 36762 is not empty
+Polyhedron::SetReferences: List 36763 is not empty
+Polyhedron::SetReferences: List 36764 is not empty
+Polyhedron::SetReferences: List 36765 is not empty
+Polyhedron::SetReferences: List 36766 is not empty
+Polyhedron::SetReferences: List 36767 is not empty
+Polyhedron::SetReferences: List 36768 is not empty
+Polyhedron::SetReferences: List 36770 is not empty
+Polyhedron::SetReferences: List 36771 is not empty
+Polyhedron::SetReferences: List 36772 is not empty
+Polyhedron::SetReferences: List 36773 is not empty
+Polyhedron::SetReferences: List 36774 is not empty
+Polyhedron::SetReferences: List 36968 is not empty
+Polyhedron::SetReferences: List 36969 is not empty
+Polyhedron::SetReferences: List 36970 is not empty
+Polyhedron::SetReferences: List 36971 is not empty
+Polyhedron::SetReferences: List 36972 is not empty
+Polyhedron::SetReferences: List 36973 is not empty
+Polyhedron::SetReferences: List 36975 is not empty
+Polyhedron::SetReferences: List 36976 is not empty
+Polyhedron::SetReferences: List 36977 is not empty
+Polyhedron::SetReferences: List 36978 is not empty
+Polyhedron::SetReferences: List 36979 is not empty
+Polyhedron::SetReferences: List 36980 is not empty
+Polyhedron::SetReferences: List 36981 is not empty
+Polyhedron::SetReferences: List 36982 is not empty
+Polyhedron::SetReferences: List 36983 is not empty
+Polyhedron::SetReferences: List 36984 is not empty
+Polyhedron::SetReferences: List 36985 is not empty
+Polyhedron::SetReferences: List 36986 is not empty
+Polyhedron::SetReferences: List 36987 is not empty
+Polyhedron::SetReferences: List 36988 is not empty
+Polyhedron::SetReferences: List 36990 is not empty
+Polyhedron::SetReferences: List 36991 is not empty
+Polyhedron::SetReferences: List 36992 is not empty
+Polyhedron::SetReferences: List 36993 is not empty
+Polyhedron::SetReferences: List 36994 is not empty
+Polyhedron::SetReferences: List 37188 is not empty
+Polyhedron::SetReferences: List 37189 is not empty
+Polyhedron::SetReferences: List 37190 is not empty
+Polyhedron::SetReferences: List 37191 is not empty
+Polyhedron::SetReferences: List 37192 is not empty
+Polyhedron::SetReferences: List 37193 is not empty
+Polyhedron::SetReferences: List 37195 is not empty
+Polyhedron::SetReferences: List 37196 is not empty
+Polyhedron::SetReferences: List 37197 is not empty
+Polyhedron::SetReferences: List 37198 is not empty
+Polyhedron::SetReferences: List 37199 is not empty
+Polyhedron::SetReferences: List 37200 is not empty
+Polyhedron::SetReferences: List 37201 is not empty
+Polyhedron::SetReferences: List 37202 is not empty
+Polyhedron::SetReferences: List 37203 is not empty
+Polyhedron::SetReferences: List 37204 is not empty
+Polyhedron::SetReferences: List 37205 is not empty
+Polyhedron::SetReferences: List 37206 is not empty
+Polyhedron::SetReferences: List 37207 is not empty
+Polyhedron::SetReferences: List 37208 is not empty
+Polyhedron::SetReferences: List 37210 is not empty
+Polyhedron::SetReferences: List 37211 is not empty
+Polyhedron::SetReferences: List 37212 is not empty
+Polyhedron::SetReferences: List 37213 is not empty
+Polyhedron::SetReferences: List 37214 is not empty
+Polyhedron::SetReferences: List 37408 is not empty
+Polyhedron::SetReferences: List 37409 is not empty
+Polyhedron::SetReferences: List 37410 is not empty
+Polyhedron::SetReferences: List 37411 is not empty
+Polyhedron::SetReferences: List 37412 is not empty
+Polyhedron::SetReferences: List 37413 is not empty
+Polyhedron::SetReferences: List 37415 is not empty
+Polyhedron::SetReferences: List 37416 is not empty
+Polyhedron::SetReferences: List 37417 is not empty
+Polyhedron::SetReferences: List 37418 is not empty
+Polyhedron::SetReferences: List 37419 is not empty
+Polyhedron::SetReferences: List 37420 is not empty
+Polyhedron::SetReferences: List 37421 is not empty
+Polyhedron::SetReferences: List 37422 is not empty
+Polyhedron::SetReferences: List 37423 is not empty
+Polyhedron::SetReferences: List 37424 is not empty
+Polyhedron::SetReferences: List 37425 is not empty
+Polyhedron::SetReferences: List 37426 is not empty
+Polyhedron::SetReferences: List 37427 is not empty
+Polyhedron::SetReferences: List 37428 is not empty
+Polyhedron::SetReferences: List 37430 is not empty
+Polyhedron::SetReferences: List 37431 is not empty
+Polyhedron::SetReferences: List 37432 is not empty
+Polyhedron::SetReferences: List 37433 is not empty
+Polyhedron::SetReferences: List 37434 is not empty
+Polyhedron::SetReferences: List 37628 is not empty
+Polyhedron::SetReferences: List 37629 is not empty
+Polyhedron::SetReferences: List 37630 is not empty
+Polyhedron::SetReferences: List 37631 is not empty
+Polyhedron::SetReferences: List 37632 is not empty
+Polyhedron::SetReferences: List 37633 is not empty
+Polyhedron::SetReferences: List 37635 is not empty
+Polyhedron::SetReferences: List 37636 is not empty
+Polyhedron::SetReferences: List 37637 is not empty
+Polyhedron::SetReferences: List 37638 is not empty
+Polyhedron::SetReferences: List 37639 is not empty
+Polyhedron::SetReferences: List 37640 is not empty
+Polyhedron::SetReferences: List 37641 is not empty
+Polyhedron::SetReferences: List 37642 is not empty
+Polyhedron::SetReferences: List 37643 is not empty
+Polyhedron::SetReferences: List 37644 is not empty
+Polyhedron::SetReferences: List 37645 is not empty
+Polyhedron::SetReferences: List 37646 is not empty
+Polyhedron::SetReferences: List 37647 is not empty
+Polyhedron::SetReferences: List 37648 is not empty
+Polyhedron::SetReferences: List 37650 is not empty
+Polyhedron::SetReferences: List 37651 is not empty
+Polyhedron::SetReferences: List 37652 is not empty
+Polyhedron::SetReferences: List 37653 is not empty
+Polyhedron::SetReferences: List 37654 is not empty
+Polyhedron::SetReferences: List 37848 is not empty
+Polyhedron::SetReferences: List 37849 is not empty
+Polyhedron::SetReferences: List 37850 is not empty
+Polyhedron::SetReferences: List 37851 is not empty
+Polyhedron::SetReferences: List 37852 is not empty
+Polyhedron::SetReferences: List 37853 is not empty
+Polyhedron::SetReferences: List 37855 is not empty
+Polyhedron::SetReferences: List 37856 is not empty
+Polyhedron::SetReferences: List 37857 is not empty
+Polyhedron::SetReferences: List 37858 is not empty
+Polyhedron::SetReferences: List 37859 is not empty
+Polyhedron::SetReferences: List 37860 is not empty
+Polyhedron::SetReferences: List 37861 is not empty
+Polyhedron::SetReferences: List 37862 is not empty
+Polyhedron::SetReferences: List 37863 is not empty
+Polyhedron::SetReferences: List 37864 is not empty
+Polyhedron::SetReferences: List 37865 is not empty
+Polyhedron::SetReferences: List 37866 is not empty
+Polyhedron::SetReferences: List 37867 is not empty
+Polyhedron::SetReferences: List 37868 is not empty
+Polyhedron::SetReferences: List 37870 is not empty
+Polyhedron::SetReferences: List 37871 is not empty
+Polyhedron::SetReferences: List 37872 is not empty
+Polyhedron::SetReferences: List 37873 is not empty
+Polyhedron::SetReferences: List 37874 is not empty
+Polyhedron::SetReferences: List 38068 is not empty
+Polyhedron::SetReferences: List 38069 is not empty
+Polyhedron::SetReferences: List 38070 is not empty
+Polyhedron::SetReferences: List 38071 is not empty
+Polyhedron::SetReferences: List 38072 is not empty
+Polyhedron::SetReferences: List 38073 is not empty
+Polyhedron::SetReferences: List 38075 is not empty
+Polyhedron::SetReferences: List 38076 is not empty
+Polyhedron::SetReferences: List 38077 is not empty
+Polyhedron::SetReferences: List 38078 is not empty
+Polyhedron::SetReferences: List 38079 is not empty
+Polyhedron::SetReferences: List 38080 is not empty
+Polyhedron::SetReferences: List 38081 is not empty
+Polyhedron::SetReferences: List 38082 is not empty
+Polyhedron::SetReferences: List 38083 is not empty
+Polyhedron::SetReferences: List 38084 is not empty
+Polyhedron::SetReferences: List 38085 is not empty
+Polyhedron::SetReferences: List 38086 is not empty
+Polyhedron::SetReferences: List 38087 is not empty
+Polyhedron::SetReferences: List 38088 is not empty
+Polyhedron::SetReferences: List 38090 is not empty
+Polyhedron::SetReferences: List 38091 is not empty
+Polyhedron::SetReferences: List 38092 is not empty
+Polyhedron::SetReferences: List 38093 is not empty
+Polyhedron::SetReferences: List 38094 is not empty
+Polyhedron::SetReferences: List 38288 is not empty
+Polyhedron::SetReferences: List 38289 is not empty
+Polyhedron::SetReferences: List 38290 is not empty
+Polyhedron::SetReferences: List 38291 is not empty
+Polyhedron::SetReferences: List 38292 is not empty
+Polyhedron::SetReferences: List 38293 is not empty
+Polyhedron::SetReferences: List 38295 is not empty
+Polyhedron::SetReferences: List 38296 is not empty
+Polyhedron::SetReferences: List 38297 is not empty
+Polyhedron::SetReferences: List 38298 is not empty
+Polyhedron::SetReferences: List 38299 is not empty
+Polyhedron::SetReferences: List 38300 is not empty
+Polyhedron::SetReferences: List 38301 is not empty
+Polyhedron::SetReferences: List 38302 is not empty
+Polyhedron::SetReferences: List 38303 is not empty
+Polyhedron::SetReferences: List 38304 is not empty
+Polyhedron::SetReferences: List 38305 is not empty
+Polyhedron::SetReferences: List 38306 is not empty
+Polyhedron::SetReferences: List 38307 is not empty
+Polyhedron::SetReferences: List 38308 is not empty
+Polyhedron::SetReferences: List 38310 is not empty
+Polyhedron::SetReferences: List 38311 is not empty
+Polyhedron::SetReferences: List 38312 is not empty
+Polyhedron::SetReferences: List 38313 is not empty
+Polyhedron::SetReferences: List 38314 is not empty
+Polyhedron::SetReferences: List 38508 is not empty
+Polyhedron::SetReferences: List 38509 is not empty
+Polyhedron::SetReferences: List 38510 is not empty
+Polyhedron::SetReferences: List 38511 is not empty
+Polyhedron::SetReferences: List 38512 is not empty
+Polyhedron::SetReferences: List 38513 is not empty
+Polyhedron::SetReferences: List 38515 is not empty
+Polyhedron::SetReferences: List 38516 is not empty
+Polyhedron::SetReferences: List 38517 is not empty
+Polyhedron::SetReferences: List 38518 is not empty
+Polyhedron::SetReferences: List 38519 is not empty
+Polyhedron::SetReferences: List 38520 is not empty
+Polyhedron::SetReferences: List 38521 is not empty
+Polyhedron::SetReferences: List 38522 is not empty
+Polyhedron::SetReferences: List 38523 is not empty
+Polyhedron::SetReferences: List 38524 is not empty
+Polyhedron::SetReferences: List 38525 is not empty
+Polyhedron::SetReferences: List 38526 is not empty
+Polyhedron::SetReferences: List 38527 is not empty
+Polyhedron::SetReferences: List 38528 is not empty
+Polyhedron::SetReferences: List 38530 is not empty
+Polyhedron::SetReferences: List 38531 is not empty
+Polyhedron::SetReferences: List 38532 is not empty
+Polyhedron::SetReferences: List 38533 is not empty
+Polyhedron::SetReferences: List 38534 is not empty
+Polyhedron::SetReferences: List 38728 is not empty
+Polyhedron::SetReferences: List 38729 is not empty
+Polyhedron::SetReferences: List 38730 is not empty
+Polyhedron::SetReferences: List 38731 is not empty
+Polyhedron::SetReferences: List 38732 is not empty
+Polyhedron::SetReferences: List 38733 is not empty
+Polyhedron::SetReferences: List 38735 is not empty
+Polyhedron::SetReferences: List 38736 is not empty
+Polyhedron::SetReferences: List 38737 is not empty
+Polyhedron::SetReferences: List 38738 is not empty
+Polyhedron::SetReferences: List 38739 is not empty
+Polyhedron::SetReferences: List 38740 is not empty
+Polyhedron::SetReferences: List 38741 is not empty
+Polyhedron::SetReferences: List 38742 is not empty
+Polyhedron::SetReferences: List 38743 is not empty
+Polyhedron::SetReferences: List 38744 is not empty
+Polyhedron::SetReferences: List 38745 is not empty
+Polyhedron::SetReferences: List 38746 is not empty
+Polyhedron::SetReferences: List 38747 is not empty
+Polyhedron::SetReferences: List 38748 is not empty
+Polyhedron::SetReferences: List 38750 is not empty
+Polyhedron::SetReferences: List 38751 is not empty
+Polyhedron::SetReferences: List 38752 is not empty
+Polyhedron::SetReferences: List 38753 is not empty
+Polyhedron::SetReferences: List 38754 is not empty
+Polyhedron::SetReferences: List 38948 is not empty
+Polyhedron::SetReferences: List 38949 is not empty
+Polyhedron::SetReferences: List 38950 is not empty
+Polyhedron::SetReferences: List 38951 is not empty
+Polyhedron::SetReferences: List 38952 is not empty
+Polyhedron::SetReferences: List 38953 is not empty
+Polyhedron::SetReferences: List 38955 is not empty
+Polyhedron::SetReferences: List 38956 is not empty
+Polyhedron::SetReferences: List 38957 is not empty
+Polyhedron::SetReferences: List 38958 is not empty
+Polyhedron::SetReferences: List 38959 is not empty
+Polyhedron::SetReferences: List 38960 is not empty
+Polyhedron::SetReferences: List 38961 is not empty
+Polyhedron::SetReferences: List 38962 is not empty
+Polyhedron::SetReferences: List 38963 is not empty
+Polyhedron::SetReferences: List 38964 is not empty
+Polyhedron::SetReferences: List 38965 is not empty
+Polyhedron::SetReferences: List 38966 is not empty
+Polyhedron::SetReferences: List 38967 is not empty
+Polyhedron::SetReferences: List 38968 is not empty
+Polyhedron::SetReferences: List 38970 is not empty
+Polyhedron::SetReferences: List 38971 is not empty
+Polyhedron::SetReferences: List 38972 is not empty
+Polyhedron::SetReferences: List 38973 is not empty
+Polyhedron::SetReferences: List 38974 is not empty
+Polyhedron::SetReferences: List 39168 is not empty
+Polyhedron::SetReferences: List 39169 is not empty
+Polyhedron::SetReferences: List 39170 is not empty
+Polyhedron::SetReferences: List 39171 is not empty
+Polyhedron::SetReferences: List 39172 is not empty
+Polyhedron::SetReferences: List 39173 is not empty
+Polyhedron::SetReferences: List 39175 is not empty
+Polyhedron::SetReferences: List 39176 is not empty
+Polyhedron::SetReferences: List 39177 is not empty
+Polyhedron::SetReferences: List 39178 is not empty
+Polyhedron::SetReferences: List 39179 is not empty
+Polyhedron::SetReferences: List 39180 is not empty
+Polyhedron::SetReferences: List 39181 is not empty
+Polyhedron::SetReferences: List 39182 is not empty
+Polyhedron::SetReferences: List 39183 is not empty
+Polyhedron::SetReferences: List 39184 is not empty
+Polyhedron::SetReferences: List 39185 is not empty
+Polyhedron::SetReferences: List 39186 is not empty
+Polyhedron::SetReferences: List 39187 is not empty
+Polyhedron::SetReferences: List 39188 is not empty
+Polyhedron::SetReferences: List 39190 is not empty
+Polyhedron::SetReferences: List 39191 is not empty
+Polyhedron::SetReferences: List 39192 is not empty
+Polyhedron::SetReferences: List 39193 is not empty
+Polyhedron::SetReferences: List 39194 is not empty
+Polyhedron::SetReferences: List 39388 is not empty
+Polyhedron::SetReferences: List 39389 is not empty
+Polyhedron::SetReferences: List 39390 is not empty
+Polyhedron::SetReferences: List 39391 is not empty
+Polyhedron::SetReferences: List 39392 is not empty
+Polyhedron::SetReferences: List 39393 is not empty
+Polyhedron::SetReferences: List 39395 is not empty
+Polyhedron::SetReferences: List 39396 is not empty
+Polyhedron::SetReferences: List 39397 is not empty
+Polyhedron::SetReferences: List 39398 is not empty
+Polyhedron::SetReferences: List 39399 is not empty
+Polyhedron::SetReferences: List 39400 is not empty
+Polyhedron::SetReferences: List 39401 is not empty
+Polyhedron::SetReferences: List 39402 is not empty
+Polyhedron::SetReferences: List 39403 is not empty
+Polyhedron::SetReferences: List 39404 is not empty
+Polyhedron::SetReferences: List 39405 is not empty
+Polyhedron::SetReferences: List 39406 is not empty
+Polyhedron::SetReferences: List 39407 is not empty
+Polyhedron::SetReferences: List 39408 is not empty
+Polyhedron::SetReferences: List 39410 is not empty
+Polyhedron::SetReferences: List 39411 is not empty
+Polyhedron::SetReferences: List 39412 is not empty
+Polyhedron::SetReferences: List 39413 is not empty
+Polyhedron::SetReferences: List 39414 is not empty
+Polyhedron::SetReferences: List 39608 is not empty
+Polyhedron::SetReferences: List 39609 is not empty
+Polyhedron::SetReferences: List 39610 is not empty
+Polyhedron::SetReferences: List 39611 is not empty
+Polyhedron::SetReferences: List 39612 is not empty
+Polyhedron::SetReferences: List 39613 is not empty
+Polyhedron::SetReferences: List 39615 is not empty
+Polyhedron::SetReferences: List 39616 is not empty
+Polyhedron::SetReferences: List 39617 is not empty
+Polyhedron::SetReferences: List 39618 is not empty
+Polyhedron::SetReferences: List 39619 is not empty
+Polyhedron::SetReferences: List 39620 is not empty
+Polyhedron::SetReferences: List 39621 is not empty
+Polyhedron::SetReferences: List 39622 is not empty
+Polyhedron::SetReferences: List 39623 is not empty
+Polyhedron::SetReferences: List 39624 is not empty
+Polyhedron::SetReferences: List 39625 is not empty
+Polyhedron::SetReferences: List 39626 is not empty
+Polyhedron::SetReferences: List 39627 is not empty
+Polyhedron::SetReferences: List 39628 is not empty
+Polyhedron::SetReferences: List 39630 is not empty
+Polyhedron::SetReferences: List 39631 is not empty
+Polyhedron::SetReferences: List 39632 is not empty
+Polyhedron::SetReferences: List 39633 is not empty
+Polyhedron::SetReferences: List 39634 is not empty
+Polyhedron::SetReferences: List 39828 is not empty
+Polyhedron::SetReferences: List 39829 is not empty
+Polyhedron::SetReferences: List 39830 is not empty
+Polyhedron::SetReferences: List 39831 is not empty
+Polyhedron::SetReferences: List 39832 is not empty
+Polyhedron::SetReferences: List 39833 is not empty
+Polyhedron::SetReferences: List 39835 is not empty
+Polyhedron::SetReferences: List 39836 is not empty
+Polyhedron::SetReferences: List 39837 is not empty
+Polyhedron::SetReferences: List 39838 is not empty
+Polyhedron::SetReferences: List 39839 is not empty
+Polyhedron::SetReferences: List 39840 is not empty
+Polyhedron::SetReferences: List 39841 is not empty
+Polyhedron::SetReferences: List 39842 is not empty
+Polyhedron::SetReferences: List 39843 is not empty
+Polyhedron::SetReferences: List 39844 is not empty
+Polyhedron::SetReferences: List 39845 is not empty
+Polyhedron::SetReferences: List 39846 is not empty
+Polyhedron::SetReferences: List 39847 is not empty
+Polyhedron::SetReferences: List 39848 is not empty
+Polyhedron::SetReferences: List 39850 is not empty
+Polyhedron::SetReferences: List 39851 is not empty
+Polyhedron::SetReferences: List 39852 is not empty
+Polyhedron::SetReferences: List 39853 is not empty
+Polyhedron::SetReferences: List 39854 is not empty
+Polyhedron::SetReferences: List 40048 is not empty
+Polyhedron::SetReferences: List 40049 is not empty
+Polyhedron::SetReferences: List 40050 is not empty
+Polyhedron::SetReferences: List 40051 is not empty
+Polyhedron::SetReferences: List 40052 is not empty
+Polyhedron::SetReferences: List 40053 is not empty
+Polyhedron::SetReferences: List 40055 is not empty
+Polyhedron::SetReferences: List 40056 is not empty
+Polyhedron::SetReferences: List 40057 is not empty
+Polyhedron::SetReferences: List 40058 is not empty
+Polyhedron::SetReferences: List 40059 is not empty
+Polyhedron::SetReferences: List 40060 is not empty
+Polyhedron::SetReferences: List 40061 is not empty
+Polyhedron::SetReferences: List 40062 is not empty
+Polyhedron::SetReferences: List 40063 is not empty
+Polyhedron::SetReferences: List 40064 is not empty
+Polyhedron::SetReferences: List 40065 is not empty
+Polyhedron::SetReferences: List 40066 is not empty
+Polyhedron::SetReferences: List 40067 is not empty
+Polyhedron::SetReferences: List 40068 is not empty
+Polyhedron::SetReferences: List 40070 is not empty
+Polyhedron::SetReferences: List 40071 is not empty
+Polyhedron::SetReferences: List 40072 is not empty
+Polyhedron::SetReferences: List 40073 is not empty
+Polyhedron::SetReferences: List 40074 is not empty
+Polyhedron::SetReferences: List 40268 is not empty
+Polyhedron::SetReferences: List 40269 is not empty
+Polyhedron::SetReferences: List 40270 is not empty
+Polyhedron::SetReferences: List 40271 is not empty
+Polyhedron::SetReferences: List 40272 is not empty
+Polyhedron::SetReferences: List 40273 is not empty
+Polyhedron::SetReferences: List 40275 is not empty
+Polyhedron::SetReferences: List 40276 is not empty
+Polyhedron::SetReferences: List 40277 is not empty
+Polyhedron::SetReferences: List 40278 is not empty
+Polyhedron::SetReferences: List 40279 is not empty
+Polyhedron::SetReferences: List 40280 is not empty
+Polyhedron::SetReferences: List 40281 is not empty
+Polyhedron::SetReferences: List 40282 is not empty
+Polyhedron::SetReferences: List 40283 is not empty
+Polyhedron::SetReferences: List 40284 is not empty
+Polyhedron::SetReferences: List 40285 is not empty
+Polyhedron::SetReferences: List 40286 is not empty
+Polyhedron::SetReferences: List 40287 is not empty
+Polyhedron::SetReferences: List 40288 is not empty
+Polyhedron::SetReferences: List 40290 is not empty
+Polyhedron::SetReferences: List 40291 is not empty
+Polyhedron::SetReferences: List 40292 is not empty
+Polyhedron::SetReferences: List 40293 is not empty
+Polyhedron::SetReferences: List 40294 is not empty
+Polyhedron::SetReferences: List 40488 is not empty
+Polyhedron::SetReferences: List 40489 is not empty
+Polyhedron::SetReferences: List 40490 is not empty
+Polyhedron::SetReferences: List 40491 is not empty
+Polyhedron::SetReferences: List 40492 is not empty
+Polyhedron::SetReferences: List 40493 is not empty
+Polyhedron::SetReferences: List 40495 is not empty
+Polyhedron::SetReferences: List 40496 is not empty
+Polyhedron::SetReferences: List 40497 is not empty
+Polyhedron::SetReferences: List 40498 is not empty
+Polyhedron::SetReferences: List 40499 is not empty
+Polyhedron::SetReferences: List 40500 is not empty
+Polyhedron::SetReferences: List 40501 is not empty
+Polyhedron::SetReferences: List 40502 is not empty
+Polyhedron::SetReferences: List 40503 is not empty
+Polyhedron::SetReferences: List 40504 is not empty
+Polyhedron::SetReferences: List 40505 is not empty
+Polyhedron::SetReferences: List 40506 is not empty
+Polyhedron::SetReferences: List 40507 is not empty
+Polyhedron::SetReferences: List 40508 is not empty
+Polyhedron::SetReferences: List 40510 is not empty
+Polyhedron::SetReferences: List 40511 is not empty
+Polyhedron::SetReferences: List 40512 is not empty
+Polyhedron::SetReferences: List 40513 is not empty
+Polyhedron::SetReferences: List 40514 is not empty
+Polyhedron::SetReferences: List 40708 is not empty
+Polyhedron::SetReferences: List 40709 is not empty
+Polyhedron::SetReferences: List 40710 is not empty
+Polyhedron::SetReferences: List 40711 is not empty
+Polyhedron::SetReferences: List 40712 is not empty
+Polyhedron::SetReferences: List 40713 is not empty
+Polyhedron::SetReferences: List 40715 is not empty
+Polyhedron::SetReferences: List 40716 is not empty
+Polyhedron::SetReferences: List 40717 is not empty
+Polyhedron::SetReferences: List 40718 is not empty
+Polyhedron::SetReferences: List 40719 is not empty
+Polyhedron::SetReferences: List 40720 is not empty
+Polyhedron::SetReferences: List 40721 is not empty
+Polyhedron::SetReferences: List 40722 is not empty
+Polyhedron::SetReferences: List 40723 is not empty
+Polyhedron::SetReferences: List 40724 is not empty
+Polyhedron::SetReferences: List 40725 is not empty
+Polyhedron::SetReferences: List 40726 is not empty
+Polyhedron::SetReferences: List 40727 is not empty
+Polyhedron::SetReferences: List 40728 is not empty
+Polyhedron::SetReferences: List 40730 is not empty
+Polyhedron::SetReferences: List 40731 is not empty
+Polyhedron::SetReferences: List 40732 is not empty
+Polyhedron::SetReferences: List 40733 is not empty
+Polyhedron::SetReferences: List 40734 is not empty
+Polyhedron::SetReferences: List 40928 is not empty
+Polyhedron::SetReferences: List 40929 is not empty
+Polyhedron::SetReferences: List 40930 is not empty
+Polyhedron::SetReferences: List 40931 is not empty
+Polyhedron::SetReferences: List 40932 is not empty
+Polyhedron::SetReferences: List 40933 is not empty
+Polyhedron::SetReferences: List 40935 is not empty
+Polyhedron::SetReferences: List 40936 is not empty
+Polyhedron::SetReferences: List 40937 is not empty
+Polyhedron::SetReferences: List 40938 is not empty
+Polyhedron::SetReferences: List 40939 is not empty
+Polyhedron::SetReferences: List 40940 is not empty
+Polyhedron::SetReferences: List 40941 is not empty
+Polyhedron::SetReferences: List 40942 is not empty
+Polyhedron::SetReferences: List 40943 is not empty
+Polyhedron::SetReferences: List 40944 is not empty
+Polyhedron::SetReferences: List 40945 is not empty
+Polyhedron::SetReferences: List 40946 is not empty
+Polyhedron::SetReferences: List 40947 is not empty
+Polyhedron::SetReferences: List 40948 is not empty
+Polyhedron::SetReferences: List 40950 is not empty
+Polyhedron::SetReferences: List 40951 is not empty
+Polyhedron::SetReferences: List 40952 is not empty
+Polyhedron::SetReferences: List 40953 is not empty
+Polyhedron::SetReferences: List 40954 is not empty
+Polyhedron::SetReferences: List 41148 is not empty
+Polyhedron::SetReferences: List 41149 is not empty
+Polyhedron::SetReferences: List 41150 is not empty
+Polyhedron::SetReferences: List 41151 is not empty
+Polyhedron::SetReferences: List 41152 is not empty
+Polyhedron::SetReferences: List 41153 is not empty
+Polyhedron::SetReferences: List 41155 is not empty
+Polyhedron::SetReferences: List 41156 is not empty
+Polyhedron::SetReferences: List 41157 is not empty
+Polyhedron::SetReferences: List 41158 is not empty
+Polyhedron::SetReferences: List 41159 is not empty
+Polyhedron::SetReferences: List 41160 is not empty
+Polyhedron::SetReferences: List 41161 is not empty
+Polyhedron::SetReferences: List 41162 is not empty
+Polyhedron::SetReferences: List 41163 is not empty
+Polyhedron::SetReferences: List 41164 is not empty
+Polyhedron::SetReferences: List 41165 is not empty
+Polyhedron::SetReferences: List 41166 is not empty
+Polyhedron::SetReferences: List 41167 is not empty
+Polyhedron::SetReferences: List 41168 is not empty
+Polyhedron::SetReferences: List 41170 is not empty
+Polyhedron::SetReferences: List 41171 is not empty
+Polyhedron::SetReferences: List 41172 is not empty
+Polyhedron::SetReferences: List 41173 is not empty
+Polyhedron::SetReferences: List 41174 is not empty
+Polyhedron::SetReferences: List 41368 is not empty
+Polyhedron::SetReferences: List 41369 is not empty
+Polyhedron::SetReferences: List 41370 is not empty
+Polyhedron::SetReferences: List 41371 is not empty
+Polyhedron::SetReferences: List 41372 is not empty
+Polyhedron::SetReferences: List 41373 is not empty
+Polyhedron::SetReferences: List 41375 is not empty
+Polyhedron::SetReferences: List 41376 is not empty
+Polyhedron::SetReferences: List 41377 is not empty
+Polyhedron::SetReferences: List 41378 is not empty
+Polyhedron::SetReferences: List 41379 is not empty
+Polyhedron::SetReferences: List 41380 is not empty
+Polyhedron::SetReferences: List 41381 is not empty
+Polyhedron::SetReferences: List 41382 is not empty
+Polyhedron::SetReferences: List 41383 is not empty
+Polyhedron::SetReferences: List 41384 is not empty
+Polyhedron::SetReferences: List 41385 is not empty
+Polyhedron::SetReferences: List 41386 is not empty
+Polyhedron::SetReferences: List 41387 is not empty
+Polyhedron::SetReferences: List 41388 is not empty
+Polyhedron::SetReferences: List 41390 is not empty
+Polyhedron::SetReferences: List 41391 is not empty
+Polyhedron::SetReferences: List 41392 is not empty
+Polyhedron::SetReferences: List 41393 is not empty
+Polyhedron::SetReferences: List 41394 is not empty
+Polyhedron::SetReferences: List 41588 is not empty
+Polyhedron::SetReferences: List 41589 is not empty
+Polyhedron::SetReferences: List 41590 is not empty
+Polyhedron::SetReferences: List 41591 is not empty
+Polyhedron::SetReferences: List 41592 is not empty
+Polyhedron::SetReferences: List 41593 is not empty
+Polyhedron::SetReferences: List 41595 is not empty
+Polyhedron::SetReferences: List 41596 is not empty
+Polyhedron::SetReferences: List 41597 is not empty
+Polyhedron::SetReferences: List 41598 is not empty
+Polyhedron::SetReferences: List 41599 is not empty
+Polyhedron::SetReferences: List 41600 is not empty
+Polyhedron::SetReferences: List 41601 is not empty
+Polyhedron::SetReferences: List 41602 is not empty
+Polyhedron::SetReferences: List 41603 is not empty
+Polyhedron::SetReferences: List 41604 is not empty
+Polyhedron::SetReferences: List 41605 is not empty
+Polyhedron::SetReferences: List 41606 is not empty
+Polyhedron::SetReferences: List 41607 is not empty
+Polyhedron::SetReferences: List 41608 is not empty
+Polyhedron::SetReferences: List 41610 is not empty
+Polyhedron::SetReferences: List 41611 is not empty
+Polyhedron::SetReferences: List 41612 is not empty
+Polyhedron::SetReferences: List 41613 is not empty
+Polyhedron::SetReferences: List 41614 is not empty
+Polyhedron::SetReferences: List 41776 is not empty
+Polyhedron::SetReferences: List 41777 is not empty
+Polyhedron::SetReferences: List 41778 is not empty
+Polyhedron::SetReferences: List 41779 is not empty
+Polyhedron::SetReferences: List 41780 is not empty
+Polyhedron::SetReferences: List 41781 is not empty
+Polyhedron::SetReferences: List 41782 is not empty
+Polyhedron::SetReferences: List 41783 is not empty
+Polyhedron::SetReferences: List 41784 is not empty
+Polyhedron::SetReferences: List 41785 is not empty
+Polyhedron::SetReferences: List 41786 is not empty
+Polyhedron::SetReferences: List 41787 is not empty
+Polyhedron::SetReferences: List 41788 is not empty
+Polyhedron::SetReferences: List 41789 is not empty
+Polyhedron::SetReferences: List 41790 is not empty
+Polyhedron::SetReferences: List 41791 is not empty
+Polyhedron::SetReferences: List 41792 is not empty
+Polyhedron::SetReferences: List 41793 is not empty
+Polyhedron::SetReferences: List 41794 is not empty
+Polyhedron::SetReferences: List 41795 is not empty
+Polyhedron::SetReferences: List 41796 is not empty
+Polyhedron::SetReferences: List 41798 is not empty
+Polyhedron::SetReferences: List 41799 is not empty
+Polyhedron::SetReferences: List 41800 is not empty
+Polyhedron::SetReferences: List 41801 is not empty
+Polyhedron::SetReferences: List 41802 is not empty
+Polyhedron::SetReferences: List 41964 is not empty
+Polyhedron::SetReferences: List 41965 is not empty
+Polyhedron::SetReferences: List 41966 is not empty
+Polyhedron::SetReferences: List 41967 is not empty
+Polyhedron::SetReferences: List 41968 is not empty
+Polyhedron::SetReferences: List 41969 is not empty
+Polyhedron::SetReferences: List 41970 is not empty
+Polyhedron::SetReferences: List 41971 is not empty
+Polyhedron::SetReferences: List 41972 is not empty
+Polyhedron::SetReferences: List 41973 is not empty
+Polyhedron::SetReferences: List 41974 is not empty
+Polyhedron::SetReferences: List 41975 is not empty
+Polyhedron::SetReferences: List 41976 is not empty
+Polyhedron::SetReferences: List 41977 is not empty
+Polyhedron::SetReferences: List 41978 is not empty
+Polyhedron::SetReferences: List 41979 is not empty
+Polyhedron::SetReferences: List 41980 is not empty
+Polyhedron::SetReferences: List 41981 is not empty
+Polyhedron::SetReferences: List 41982 is not empty
+Polyhedron::SetReferences: List 41983 is not empty
+Polyhedron::SetReferences: List 41984 is not empty
+Polyhedron::SetReferences: List 41986 is not empty
+Polyhedron::SetReferences: List 41987 is not empty
+Polyhedron::SetReferences: List 41988 is not empty
+Polyhedron::SetReferences: List 41989 is not empty
+Polyhedron::SetReferences: List 41990 is not empty
+Polyhedron::SetReferences: List 42184 is not empty
+Polyhedron::SetReferences: List 42185 is not empty
+Polyhedron::SetReferences: List 42186 is not empty
+Polyhedron::SetReferences: List 42187 is not empty
+Polyhedron::SetReferences: List 42188 is not empty
+Polyhedron::SetReferences: List 42189 is not empty
+Polyhedron::SetReferences: List 42191 is not empty
+Polyhedron::SetReferences: List 42192 is not empty
+Polyhedron::SetReferences: List 42193 is not empty
+Polyhedron::SetReferences: List 42194 is not empty
+Polyhedron::SetReferences: List 42195 is not empty
+Polyhedron::SetReferences: List 42196 is not empty
+Polyhedron::SetReferences: List 42197 is not empty
+Polyhedron::SetReferences: List 42198 is not empty
+Polyhedron::SetReferences: List 42199 is not empty
+Polyhedron::SetReferences: List 42200 is not empty
+Polyhedron::SetReferences: List 42201 is not empty
+Polyhedron::SetReferences: List 42202 is not empty
+Polyhedron::SetReferences: List 42203 is not empty
+Polyhedron::SetReferences: List 42204 is not empty
+Polyhedron::SetReferences: List 42206 is not empty
+Polyhedron::SetReferences: List 42207 is not empty
+Polyhedron::SetReferences: List 42208 is not empty
+Polyhedron::SetReferences: List 42209 is not empty
+Polyhedron::SetReferences: List 42210 is not empty
+Polyhedron::SetReferences: List 42404 is not empty
+Polyhedron::SetReferences: List 42405 is not empty
+Polyhedron::SetReferences: List 42406 is not empty
+Polyhedron::SetReferences: List 42407 is not empty
+Polyhedron::SetReferences: List 42408 is not empty
+Polyhedron::SetReferences: List 42409 is not empty
+Polyhedron::SetReferences: List 42411 is not empty
+Polyhedron::SetReferences: List 42412 is not empty
+Polyhedron::SetReferences: List 42413 is not empty
+Polyhedron::SetReferences: List 42414 is not empty
+Polyhedron::SetReferences: List 42415 is not empty
+Polyhedron::SetReferences: List 42416 is not empty
+Polyhedron::SetReferences: List 42417 is not empty
+Polyhedron::SetReferences: List 42418 is not empty
+Polyhedron::SetReferences: List 42419 is not empty
+Polyhedron::SetReferences: List 42420 is not empty
+Polyhedron::SetReferences: List 42421 is not empty
+Polyhedron::SetReferences: List 42422 is not empty
+Polyhedron::SetReferences: List 42423 is not empty
+Polyhedron::SetReferences: List 42424 is not empty
+Polyhedron::SetReferences: List 42426 is not empty
+Polyhedron::SetReferences: List 42427 is not empty
+Polyhedron::SetReferences: List 42428 is not empty
+Polyhedron::SetReferences: List 42429 is not empty
+Polyhedron::SetReferences: List 42430 is not empty
+Polyhedron::SetReferences: List 42624 is not empty
+Polyhedron::SetReferences: List 42625 is not empty
+Polyhedron::SetReferences: List 42626 is not empty
+Polyhedron::SetReferences: List 42627 is not empty
+Polyhedron::SetReferences: List 42628 is not empty
+Polyhedron::SetReferences: List 42629 is not empty
+Polyhedron::SetReferences: List 42631 is not empty
+Polyhedron::SetReferences: List 42632 is not empty
+Polyhedron::SetReferences: List 42633 is not empty
+Polyhedron::SetReferences: List 42634 is not empty
+Polyhedron::SetReferences: List 42635 is not empty
+Polyhedron::SetReferences: List 42636 is not empty
+Polyhedron::SetReferences: List 42637 is not empty
+Polyhedron::SetReferences: List 42638 is not empty
+Polyhedron::SetReferences: List 42639 is not empty
+Polyhedron::SetReferences: List 42640 is not empty
+Polyhedron::SetReferences: List 42641 is not empty
+Polyhedron::SetReferences: List 42642 is not empty
+Polyhedron::SetReferences: List 42643 is not empty
+Polyhedron::SetReferences: List 42644 is not empty
+Polyhedron::SetReferences: List 42646 is not empty
+Polyhedron::SetReferences: List 42647 is not empty
+Polyhedron::SetReferences: List 42648 is not empty
+Polyhedron::SetReferences: List 42649 is not empty
+Polyhedron::SetReferences: List 42650 is not empty
+Polyhedron::SetReferences: List 42844 is not empty
+Polyhedron::SetReferences: List 42845 is not empty
+Polyhedron::SetReferences: List 42846 is not empty
+Polyhedron::SetReferences: List 42847 is not empty
+Polyhedron::SetReferences: List 42848 is not empty
+Polyhedron::SetReferences: List 42849 is not empty
+Polyhedron::SetReferences: List 42851 is not empty
+Polyhedron::SetReferences: List 42852 is not empty
+Polyhedron::SetReferences: List 42853 is not empty
+Polyhedron::SetReferences: List 42854 is not empty
+Polyhedron::SetReferences: List 42855 is not empty
+Polyhedron::SetReferences: List 42856 is not empty
+Polyhedron::SetReferences: List 42857 is not empty
+Polyhedron::SetReferences: List 42858 is not empty
+Polyhedron::SetReferences: List 42859 is not empty
+Polyhedron::SetReferences: List 42860 is not empty
+Polyhedron::SetReferences: List 42861 is not empty
+Polyhedron::SetReferences: List 42862 is not empty
+Polyhedron::SetReferences: List 42863 is not empty
+Polyhedron::SetReferences: List 42864 is not empty
+Polyhedron::SetReferences: List 42866 is not empty
+Polyhedron::SetReferences: List 42867 is not empty
+Polyhedron::SetReferences: List 42868 is not empty
+Polyhedron::SetReferences: List 42869 is not empty
+Polyhedron::SetReferences: List 42870 is not empty
+Polyhedron::SetReferences: List 43064 is not empty
+Polyhedron::SetReferences: List 43065 is not empty
+Polyhedron::SetReferences: List 43066 is not empty
+Polyhedron::SetReferences: List 43067 is not empty
+Polyhedron::SetReferences: List 43068 is not empty
+Polyhedron::SetReferences: List 43069 is not empty
+Polyhedron::SetReferences: List 43071 is not empty
+Polyhedron::SetReferences: List 43072 is not empty
+Polyhedron::SetReferences: List 43073 is not empty
+Polyhedron::SetReferences: List 43074 is not empty
+Polyhedron::SetReferences: List 43075 is not empty
+Polyhedron::SetReferences: List 43076 is not empty
+Polyhedron::SetReferences: List 43077 is not empty
+Polyhedron::SetReferences: List 43078 is not empty
+Polyhedron::SetReferences: List 43079 is not empty
+Polyhedron::SetReferences: List 43080 is not empty
+Polyhedron::SetReferences: List 43081 is not empty
+Polyhedron::SetReferences: List 43082 is not empty
+Polyhedron::SetReferences: List 43083 is not empty
+Polyhedron::SetReferences: List 43084 is not empty
+Polyhedron::SetReferences: List 43086 is not empty
+Polyhedron::SetReferences: List 43087 is not empty
+Polyhedron::SetReferences: List 43088 is not empty
+Polyhedron::SetReferences: List 43089 is not empty
+Polyhedron::SetReferences: List 43090 is not empty
+Polyhedron::SetReferences: List 43284 is not empty
+Polyhedron::SetReferences: List 43285 is not empty
+Polyhedron::SetReferences: List 43286 is not empty
+Polyhedron::SetReferences: List 43287 is not empty
+Polyhedron::SetReferences: List 43288 is not empty
+Polyhedron::SetReferences: List 43289 is not empty
+Polyhedron::SetReferences: List 43291 is not empty
+Polyhedron::SetReferences: List 43292 is not empty
+Polyhedron::SetReferences: List 43293 is not empty
+Polyhedron::SetReferences: List 43294 is not empty
+Polyhedron::SetReferences: List 43295 is not empty
+Polyhedron::SetReferences: List 43296 is not empty
+Polyhedron::SetReferences: List 43297 is not empty
+Polyhedron::SetReferences: List 43298 is not empty
+Polyhedron::SetReferences: List 43299 is not empty
+Polyhedron::SetReferences: List 43300 is not empty
+Polyhedron::SetReferences: List 43301 is not empty
+Polyhedron::SetReferences: List 43302 is not empty
+Polyhedron::SetReferences: List 43303 is not empty
+Polyhedron::SetReferences: List 43304 is not empty
+Polyhedron::SetReferences: List 43306 is not empty
+Polyhedron::SetReferences: List 43307 is not empty
+Polyhedron::SetReferences: List 43308 is not empty
+Polyhedron::SetReferences: List 43309 is not empty
+Polyhedron::SetReferences: List 43310 is not empty
+Polyhedron::SetReferences: List 43504 is not empty
+Polyhedron::SetReferences: List 43505 is not empty
+Polyhedron::SetReferences: List 43506 is not empty
+Polyhedron::SetReferences: List 43507 is not empty
+Polyhedron::SetReferences: List 43508 is not empty
+Polyhedron::SetReferences: List 43509 is not empty
+Polyhedron::SetReferences: List 43511 is not empty
+Polyhedron::SetReferences: List 43512 is not empty
+Polyhedron::SetReferences: List 43513 is not empty
+Polyhedron::SetReferences: List 43514 is not empty
+Polyhedron::SetReferences: List 43515 is not empty
+Polyhedron::SetReferences: List 43516 is not empty
+Polyhedron::SetReferences: List 43517 is not empty
+Polyhedron::SetReferences: List 43518 is not empty
+Polyhedron::SetReferences: List 43519 is not empty
+Polyhedron::SetReferences: List 43520 is not empty
+Polyhedron::SetReferences: List 43521 is not empty
+Polyhedron::SetReferences: List 43522 is not empty
+Polyhedron::SetReferences: List 43523 is not empty
+Polyhedron::SetReferences: List 43524 is not empty
+Polyhedron::SetReferences: List 43526 is not empty
+Polyhedron::SetReferences: List 43527 is not empty
+Polyhedron::SetReferences: List 43528 is not empty
+Polyhedron::SetReferences: List 43529 is not empty
+Polyhedron::SetReferences: List 43530 is not empty
+Polyhedron::SetReferences: List 43724 is not empty
+Polyhedron::SetReferences: List 43725 is not empty
+Polyhedron::SetReferences: List 43726 is not empty
+Polyhedron::SetReferences: List 43727 is not empty
+Polyhedron::SetReferences: List 43728 is not empty
+Polyhedron::SetReferences: List 43729 is not empty
+Polyhedron::SetReferences: List 43731 is not empty
+Polyhedron::SetReferences: List 43732 is not empty
+Polyhedron::SetReferences: List 43733 is not empty
+Polyhedron::SetReferences: List 43734 is not empty
+Polyhedron::SetReferences: List 43735 is not empty
+Polyhedron::SetReferences: List 43736 is not empty
+Polyhedron::SetReferences: List 43737 is not empty
+Polyhedron::SetReferences: List 43738 is not empty
+Polyhedron::SetReferences: List 43739 is not empty
+Polyhedron::SetReferences: List 43740 is not empty
+Polyhedron::SetReferences: List 43741 is not empty
+Polyhedron::SetReferences: List 43742 is not empty
+Polyhedron::SetReferences: List 43743 is not empty
+Polyhedron::SetReferences: List 43744 is not empty
+Polyhedron::SetReferences: List 43746 is not empty
+Polyhedron::SetReferences: List 43747 is not empty
+Polyhedron::SetReferences: List 43748 is not empty
+Polyhedron::SetReferences: List 43749 is not empty
+Polyhedron::SetReferences: List 43750 is not empty
+Polyhedron::SetReferences: List 43944 is not empty
+Polyhedron::SetReferences: List 43945 is not empty
+Polyhedron::SetReferences: List 43946 is not empty
+Polyhedron::SetReferences: List 43947 is not empty
+Polyhedron::SetReferences: List 43948 is not empty
+Polyhedron::SetReferences: List 43949 is not empty
+Polyhedron::SetReferences: List 43951 is not empty
+Polyhedron::SetReferences: List 43952 is not empty
+Polyhedron::SetReferences: List 43953 is not empty
+Polyhedron::SetReferences: List 43954 is not empty
+Polyhedron::SetReferences: List 43955 is not empty
+Polyhedron::SetReferences: List 43956 is not empty
+Polyhedron::SetReferences: List 43957 is not empty
+Polyhedron::SetReferences: List 43958 is not empty
+Polyhedron::SetReferences: List 43959 is not empty
+Polyhedron::SetReferences: List 43960 is not empty
+Polyhedron::SetReferences: List 43961 is not empty
+Polyhedron::SetReferences: List 43962 is not empty
+Polyhedron::SetReferences: List 43963 is not empty
+Polyhedron::SetReferences: List 43964 is not empty
+Polyhedron::SetReferences: List 43966 is not empty
+Polyhedron::SetReferences: List 43967 is not empty
+Polyhedron::SetReferences: List 43968 is not empty
+Polyhedron::SetReferences: List 43969 is not empty
+Polyhedron::SetReferences: List 43970 is not empty
+Polyhedron::SetReferences: List 44164 is not empty
+Polyhedron::SetReferences: List 44165 is not empty
+Polyhedron::SetReferences: List 44166 is not empty
+Polyhedron::SetReferences: List 44167 is not empty
+Polyhedron::SetReferences: List 44168 is not empty
+Polyhedron::SetReferences: List 44169 is not empty
+Polyhedron::SetReferences: List 44171 is not empty
+Polyhedron::SetReferences: List 44172 is not empty
+Polyhedron::SetReferences: List 44173 is not empty
+Polyhedron::SetReferences: List 44174 is not empty
+Polyhedron::SetReferences: List 44175 is not empty
+Polyhedron::SetReferences: List 44176 is not empty
+Polyhedron::SetReferences: List 44177 is not empty
+Polyhedron::SetReferences: List 44178 is not empty
+Polyhedron::SetReferences: List 44179 is not empty
+Polyhedron::SetReferences: List 44180 is not empty
+Polyhedron::SetReferences: List 44181 is not empty
+Polyhedron::SetReferences: List 44182 is not empty
+Polyhedron::SetReferences: List 44183 is not empty
+Polyhedron::SetReferences: List 44184 is not empty
+Polyhedron::SetReferences: List 44186 is not empty
+Polyhedron::SetReferences: List 44187 is not empty
+Polyhedron::SetReferences: List 44188 is not empty
+Polyhedron::SetReferences: List 44189 is not empty
+Polyhedron::SetReferences: List 44190 is not empty
+Polyhedron::SetReferences: List 44384 is not empty
+Polyhedron::SetReferences: List 44385 is not empty
+Polyhedron::SetReferences: List 44386 is not empty
+Polyhedron::SetReferences: List 44387 is not empty
+Polyhedron::SetReferences: List 44388 is not empty
+Polyhedron::SetReferences: List 44389 is not empty
+Polyhedron::SetReferences: List 44391 is not empty
+Polyhedron::SetReferences: List 44392 is not empty
+Polyhedron::SetReferences: List 44393 is not empty
+Polyhedron::SetReferences: List 44394 is not empty
+Polyhedron::SetReferences: List 44395 is not empty
+Polyhedron::SetReferences: List 44396 is not empty
+Polyhedron::SetReferences: List 44397 is not empty
+Polyhedron::SetReferences: List 44398 is not empty
+Polyhedron::SetReferences: List 44399 is not empty
+Polyhedron::SetReferences: List 44400 is not empty
+Polyhedron::SetReferences: List 44401 is not empty
+Polyhedron::SetReferences: List 44402 is not empty
+Polyhedron::SetReferences: List 44403 is not empty
+Polyhedron::SetReferences: List 44404 is not empty
+Polyhedron::SetReferences: List 44406 is not empty
+Polyhedron::SetReferences: List 44407 is not empty
+Polyhedron::SetReferences: List 44408 is not empty
+Polyhedron::SetReferences: List 44409 is not empty
+Polyhedron::SetReferences: List 44410 is not empty
+Polyhedron::SetReferences: List 44604 is not empty
+Polyhedron::SetReferences: List 44605 is not empty
+Polyhedron::SetReferences: List 44606 is not empty
+Polyhedron::SetReferences: List 44607 is not empty
+Polyhedron::SetReferences: List 44608 is not empty
+Polyhedron::SetReferences: List 44609 is not empty
+Polyhedron::SetReferences: List 44611 is not empty
+Polyhedron::SetReferences: List 44612 is not empty
+Polyhedron::SetReferences: List 44613 is not empty
+Polyhedron::SetReferences: List 44614 is not empty
+Polyhedron::SetReferences: List 44615 is not empty
+Polyhedron::SetReferences: List 44616 is not empty
+Polyhedron::SetReferences: List 44617 is not empty
+Polyhedron::SetReferences: List 44618 is not empty
+Polyhedron::SetReferences: List 44619 is not empty
+Polyhedron::SetReferences: List 44620 is not empty
+Polyhedron::SetReferences: List 44621 is not empty
+Polyhedron::SetReferences: List 44622 is not empty
+Polyhedron::SetReferences: List 44623 is not empty
+Polyhedron::SetReferences: List 44624 is not empty
+Polyhedron::SetReferences: List 44626 is not empty
+Polyhedron::SetReferences: List 44627 is not empty
+Polyhedron::SetReferences: List 44628 is not empty
+Polyhedron::SetReferences: List 44629 is not empty
+Polyhedron::SetReferences: List 44630 is not empty
+Polyhedron::SetReferences: List 44824 is not empty
+Polyhedron::SetReferences: List 44825 is not empty
+Polyhedron::SetReferences: List 44826 is not empty
+Polyhedron::SetReferences: List 44827 is not empty
+Polyhedron::SetReferences: List 44828 is not empty
+Polyhedron::SetReferences: List 44829 is not empty
+Polyhedron::SetReferences: List 44831 is not empty
+Polyhedron::SetReferences: List 44832 is not empty
+Polyhedron::SetReferences: List 44833 is not empty
+Polyhedron::SetReferences: List 44834 is not empty
+Polyhedron::SetReferences: List 44835 is not empty
+Polyhedron::SetReferences: List 44836 is not empty
+Polyhedron::SetReferences: List 44837 is not empty
+Polyhedron::SetReferences: List 44838 is not empty
+Polyhedron::SetReferences: List 44839 is not empty
+Polyhedron::SetReferences: List 44840 is not empty
+Polyhedron::SetReferences: List 44841 is not empty
+Polyhedron::SetReferences: List 44842 is not empty
+Polyhedron::SetReferences: List 44843 is not empty
+Polyhedron::SetReferences: List 44844 is not empty
+Polyhedron::SetReferences: List 44846 is not empty
+Polyhedron::SetReferences: List 44847 is not empty
+Polyhedron::SetReferences: List 44848 is not empty
+Polyhedron::SetReferences: List 44849 is not empty
+Polyhedron::SetReferences: List 44850 is not empty
+Polyhedron::SetReferences: List 45044 is not empty
+Polyhedron::SetReferences: List 45045 is not empty
+Polyhedron::SetReferences: List 45046 is not empty
+Polyhedron::SetReferences: List 45047 is not empty
+Polyhedron::SetReferences: List 45048 is not empty
+Polyhedron::SetReferences: List 45049 is not empty
+Polyhedron::SetReferences: List 45051 is not empty
+Polyhedron::SetReferences: List 45052 is not empty
+Polyhedron::SetReferences: List 45053 is not empty
+Polyhedron::SetReferences: List 45054 is not empty
+Polyhedron::SetReferences: List 45055 is not empty
+Polyhedron::SetReferences: List 45056 is not empty
+Polyhedron::SetReferences: List 45057 is not empty
+Polyhedron::SetReferences: List 45058 is not empty
+Polyhedron::SetReferences: List 45059 is not empty
+Polyhedron::SetReferences: List 45060 is not empty
+Polyhedron::SetReferences: List 45061 is not empty
+Polyhedron::SetReferences: List 45062 is not empty
+Polyhedron::SetReferences: List 45063 is not empty
+Polyhedron::SetReferences: List 45064 is not empty
+Polyhedron::SetReferences: List 45066 is not empty
+Polyhedron::SetReferences: List 45067 is not empty
+Polyhedron::SetReferences: List 45068 is not empty
+Polyhedron::SetReferences: List 45069 is not empty
+Polyhedron::SetReferences: List 45070 is not empty
+Polyhedron::SetReferences: List 45264 is not empty
+Polyhedron::SetReferences: List 45265 is not empty
+Polyhedron::SetReferences: List 45266 is not empty
+Polyhedron::SetReferences: List 45267 is not empty
+Polyhedron::SetReferences: List 45268 is not empty
+Polyhedron::SetReferences: List 45269 is not empty
+Polyhedron::SetReferences: List 45271 is not empty
+Polyhedron::SetReferences: List 45272 is not empty
+Polyhedron::SetReferences: List 45273 is not empty
+Polyhedron::SetReferences: List 45274 is not empty
+Polyhedron::SetReferences: List 45275 is not empty
+Polyhedron::SetReferences: List 45276 is not empty
+Polyhedron::SetReferences: List 45277 is not empty
+Polyhedron::SetReferences: List 45278 is not empty
+Polyhedron::SetReferences: List 45279 is not empty
+Polyhedron::SetReferences: List 45280 is not empty
+Polyhedron::SetReferences: List 45281 is not empty
+Polyhedron::SetReferences: List 45282 is not empty
+Polyhedron::SetReferences: List 45283 is not empty
+Polyhedron::SetReferences: List 45284 is not empty
+Polyhedron::SetReferences: List 45286 is not empty
+Polyhedron::SetReferences: List 45287 is not empty
+Polyhedron::SetReferences: List 45288 is not empty
+Polyhedron::SetReferences: List 45289 is not empty
+Polyhedron::SetReferences: List 45290 is not empty
+Polyhedron::SetReferences: List 45484 is not empty
+Polyhedron::SetReferences: List 45485 is not empty
+Polyhedron::SetReferences: List 45486 is not empty
+Polyhedron::SetReferences: List 45487 is not empty
+Polyhedron::SetReferences: List 45488 is not empty
+Polyhedron::SetReferences: List 45489 is not empty
+Polyhedron::SetReferences: List 45491 is not empty
+Polyhedron::SetReferences: List 45492 is not empty
+Polyhedron::SetReferences: List 45493 is not empty
+Polyhedron::SetReferences: List 45494 is not empty
+Polyhedron::SetReferences: List 45495 is not empty
+Polyhedron::SetReferences: List 45496 is not empty
+Polyhedron::SetReferences: List 45497 is not empty
+Polyhedron::SetReferences: List 45498 is not empty
+Polyhedron::SetReferences: List 45499 is not empty
+Polyhedron::SetReferences: List 45500 is not empty
+Polyhedron::SetReferences: List 45501 is not empty
+Polyhedron::SetReferences: List 45502 is not empty
+Polyhedron::SetReferences: List 45503 is not empty
+Polyhedron::SetReferences: List 45504 is not empty
+Polyhedron::SetReferences: List 45506 is not empty
+Polyhedron::SetReferences: List 45507 is not empty
+Polyhedron::SetReferences: List 45508 is not empty
+Polyhedron::SetReferences: List 45509 is not empty
+Polyhedron::SetReferences: List 45510 is not empty
+Polyhedron::SetReferences: List 45704 is not empty
+Polyhedron::SetReferences: List 45705 is not empty
+Polyhedron::SetReferences: List 45706 is not empty
+Polyhedron::SetReferences: List 45707 is not empty
+Polyhedron::SetReferences: List 45708 is not empty
+Polyhedron::SetReferences: List 45709 is not empty
+Polyhedron::SetReferences: List 45711 is not empty
+Polyhedron::SetReferences: List 45712 is not empty
+Polyhedron::SetReferences: List 45713 is not empty
+Polyhedron::SetReferences: List 45714 is not empty
+Polyhedron::SetReferences: List 45715 is not empty
+Polyhedron::SetReferences: List 45716 is not empty
+Polyhedron::SetReferences: List 45717 is not empty
+Polyhedron::SetReferences: List 45718 is not empty
+Polyhedron::SetReferences: List 45719 is not empty
+Polyhedron::SetReferences: List 45720 is not empty
+Polyhedron::SetReferences: List 45721 is not empty
+Polyhedron::SetReferences: List 45722 is not empty
+Polyhedron::SetReferences: List 45723 is not empty
+Polyhedron::SetReferences: List 45724 is not empty
+Polyhedron::SetReferences: List 45726 is not empty
+Polyhedron::SetReferences: List 45727 is not empty
+Polyhedron::SetReferences: List 45728 is not empty
+Polyhedron::SetReferences: List 45729 is not empty
+Polyhedron::SetReferences: List 45730 is not empty
+Polyhedron::SetReferences: List 45924 is not empty
+Polyhedron::SetReferences: List 45925 is not empty
+Polyhedron::SetReferences: List 45926 is not empty
+Polyhedron::SetReferences: List 45927 is not empty
+Polyhedron::SetReferences: List 45928 is not empty
+Polyhedron::SetReferences: List 45929 is not empty
+Polyhedron::SetReferences: List 45931 is not empty
+Polyhedron::SetReferences: List 45932 is not empty
+Polyhedron::SetReferences: List 45933 is not empty
+Polyhedron::SetReferences: List 45934 is not empty
+Polyhedron::SetReferences: List 45935 is not empty
+Polyhedron::SetReferences: List 45936 is not empty
+Polyhedron::SetReferences: List 45937 is not empty
+Polyhedron::SetReferences: List 45938 is not empty
+Polyhedron::SetReferences: List 45939 is not empty
+Polyhedron::SetReferences: List 45940 is not empty
+Polyhedron::SetReferences: List 45941 is not empty
+Polyhedron::SetReferences: List 45942 is not empty
+Polyhedron::SetReferences: List 45943 is not empty
+Polyhedron::SetReferences: List 45944 is not empty
+Polyhedron::SetReferences: List 45946 is not empty
+Polyhedron::SetReferences: List 45947 is not empty
+Polyhedron::SetReferences: List 45948 is not empty
+Polyhedron::SetReferences: List 45949 is not empty
+Polyhedron::SetReferences: List 45950 is not empty
+Polyhedron::SetReferences: List 46144 is not empty
+Polyhedron::SetReferences: List 46145 is not empty
+Polyhedron::SetReferences: List 46146 is not empty
+Polyhedron::SetReferences: List 46147 is not empty
+Polyhedron::SetReferences: List 46148 is not empty
+Polyhedron::SetReferences: List 46149 is not empty
+Polyhedron::SetReferences: List 46151 is not empty
+Polyhedron::SetReferences: List 46152 is not empty
+Polyhedron::SetReferences: List 46153 is not empty
+Polyhedron::SetReferences: List 46154 is not empty
+Polyhedron::SetReferences: List 46155 is not empty
+Polyhedron::SetReferences: List 46156 is not empty
+Polyhedron::SetReferences: List 46157 is not empty
+Polyhedron::SetReferences: List 46158 is not empty
+Polyhedron::SetReferences: List 46159 is not empty
+Polyhedron::SetReferences: List 46160 is not empty
+Polyhedron::SetReferences: List 46161 is not empty
+Polyhedron::SetReferences: List 46162 is not empty
+Polyhedron::SetReferences: List 46163 is not empty
+Polyhedron::SetReferences: List 46164 is not empty
+Polyhedron::SetReferences: List 46166 is not empty
+Polyhedron::SetReferences: List 46167 is not empty
+Polyhedron::SetReferences: List 46168 is not empty
+Polyhedron::SetReferences: List 46169 is not empty
+Polyhedron::SetReferences: List 46170 is not empty
+Polyhedron::SetReferences: List 46364 is not empty
+Polyhedron::SetReferences: List 46365 is not empty
+Polyhedron::SetReferences: List 46366 is not empty
+Polyhedron::SetReferences: List 46367 is not empty
+Polyhedron::SetReferences: List 46368 is not empty
+Polyhedron::SetReferences: List 46369 is not empty
+Polyhedron::SetReferences: List 46371 is not empty
+Polyhedron::SetReferences: List 46372 is not empty
+Polyhedron::SetReferences: List 46373 is not empty
+Polyhedron::SetReferences: List 46374 is not empty
+Polyhedron::SetReferences: List 46375 is not empty
+Polyhedron::SetReferences: List 46376 is not empty
+Polyhedron::SetReferences: List 46377 is not empty
+Polyhedron::SetReferences: List 46378 is not empty
+Polyhedron::SetReferences: List 46379 is not empty
+Polyhedron::SetReferences: List 46380 is not empty
+Polyhedron::SetReferences: List 46381 is not empty
+Polyhedron::SetReferences: List 46382 is not empty
+Polyhedron::SetReferences: List 46383 is not empty
+Polyhedron::SetReferences: List 46384 is not empty
+Polyhedron::SetReferences: List 46386 is not empty
+Polyhedron::SetReferences: List 46387 is not empty
+Polyhedron::SetReferences: List 46388 is not empty
+Polyhedron::SetReferences: List 46389 is not empty
+Polyhedron::SetReferences: List 46390 is not empty
+Polyhedron::SetReferences: List 46520 is not empty
+Polyhedron::SetReferences: List 46521 is not empty
+Polyhedron::SetReferences: List 46522 is not empty
+Polyhedron::SetReferences: List 46523 is not empty
+Polyhedron::SetReferences: List 46524 is not empty
+Polyhedron::SetReferences: List 46525 is not empty
+Polyhedron::SetReferences: List 46526 is not empty
+Polyhedron::SetReferences: List 46527 is not empty
+Polyhedron::SetReferences: List 46528 is not empty
+Polyhedron::SetReferences: List 46529 is not empty
+Polyhedron::SetReferences: List 46530 is not empty
+Polyhedron::SetReferences: List 46531 is not empty
+Polyhedron::SetReferences: List 46532 is not empty
+Polyhedron::SetReferences: List 46533 is not empty
+Polyhedron::SetReferences: List 46534 is not empty
+Polyhedron::SetReferences: List 46535 is not empty
+Polyhedron::SetReferences: List 46536 is not empty
+Polyhedron::SetReferences: List 46537 is not empty
+Polyhedron::SetReferences: List 46538 is not empty
+Polyhedron::SetReferences: List 46539 is not empty
+Polyhedron::SetReferences: List 46540 is not empty
+Polyhedron::SetReferences: List 46542 is not empty
+Polyhedron::SetReferences: List 46543 is not empty
+Polyhedron::SetReferences: List 46544 is not empty
+Polyhedron::SetReferences: List 46545 is not empty
+Polyhedron::SetReferences: List 46546 is not empty
+Polyhedron::SetReferences: List 46676 is not empty
+Polyhedron::SetReferences: List 46677 is not empty
+Polyhedron::SetReferences: List 46678 is not empty
+Polyhedron::SetReferences: List 46679 is not empty
+Polyhedron::SetReferences: List 46680 is not empty
+Polyhedron::SetReferences: List 46681 is not empty
+Polyhedron::SetReferences: List 46683 is not empty
+Polyhedron::SetReferences: List 46684 is not empty
+Polyhedron::SetReferences: List 46685 is not empty
+Polyhedron::SetReferences: List 46686 is not empty
+Polyhedron::SetReferences: List 46687 is not empty
+Polyhedron::SetReferences: List 46688 is not empty
+Polyhedron::SetReferences: List 46689 is not empty
+Polyhedron::SetReferences: List 46690 is not empty
+Polyhedron::SetReferences: List 46691 is not empty
+Polyhedron::SetReferences: List 46692 is not empty
+Polyhedron::SetReferences: List 46693 is not empty
+Polyhedron::SetReferences: List 46694 is not empty
+Polyhedron::SetReferences: List 46695 is not empty
+Polyhedron::SetReferences: List 46696 is not empty
+Polyhedron::SetReferences: List 46698 is not empty
+Polyhedron::SetReferences: List 46699 is not empty
+Polyhedron::SetReferences: List 46700 is not empty
+Polyhedron::SetReferences: List 46701 is not empty
+Polyhedron::SetReferences: List 46702 is not empty
+Polyhedron::SetReferences: List 46832 is not empty
+Polyhedron::SetReferences: List 46833 is not empty
+Polyhedron::SetReferences: List 46834 is not empty
+Polyhedron::SetReferences: List 46835 is not empty
+Polyhedron::SetReferences: List 46836 is not empty
+Polyhedron::SetReferences: List 46837 is not empty
+Polyhedron::SetReferences: List 46839 is not empty
+Polyhedron::SetReferences: List 46840 is not empty
+Polyhedron::SetReferences: List 46841 is not empty
+Polyhedron::SetReferences: List 46842 is not empty
+Polyhedron::SetReferences: List 46843 is not empty
+Polyhedron::SetReferences: List 46844 is not empty
+Polyhedron::SetReferences: List 46845 is not empty
+Polyhedron::SetReferences: List 46846 is not empty
+Polyhedron::SetReferences: List 46847 is not empty
+Polyhedron::SetReferences: List 46848 is not empty
+Polyhedron::SetReferences: List 46849 is not empty
+Polyhedron::SetReferences: List 46850 is not empty
+Polyhedron::SetReferences: List 46851 is not empty
+Polyhedron::SetReferences: List 46852 is not empty
+Polyhedron::SetReferences: List 46854 is not empty
+Polyhedron::SetReferences: List 46855 is not empty
+Polyhedron::SetReferences: List 46856 is not empty
+Polyhedron::SetReferences: List 46857 is not empty
+Polyhedron::SetReferences: List 46858 is not empty
+Polyhedron::SetReferences: List 46988 is not empty
+Polyhedron::SetReferences: List 46989 is not empty
+Polyhedron::SetReferences: List 46990 is not empty
+Polyhedron::SetReferences: List 46991 is not empty
+Polyhedron::SetReferences: List 46992 is not empty
+Polyhedron::SetReferences: List 46993 is not empty
+Polyhedron::SetReferences: List 46994 is not empty
+Polyhedron::SetReferences: List 46995 is not empty
+Polyhedron::SetReferences: List 46996 is not empty
+Polyhedron::SetReferences: List 46997 is not empty
+Polyhedron::SetReferences: List 46998 is not empty
+Polyhedron::SetReferences: List 46999 is not empty
+Polyhedron::SetReferences: List 47000 is not empty
+Polyhedron::SetReferences: List 47001 is not empty
+Polyhedron::SetReferences: List 47002 is not empty
+Polyhedron::SetReferences: List 47003 is not empty
+Polyhedron::SetReferences: List 47004 is not empty
+Polyhedron::SetReferences: List 47005 is not empty
+Polyhedron::SetReferences: List 47006 is not empty
+Polyhedron::SetReferences: List 47007 is not empty
+Polyhedron::SetReferences: List 47008 is not empty
+Polyhedron::SetReferences: List 47010 is not empty
+Polyhedron::SetReferences: List 47011 is not empty
+Polyhedron::SetReferences: List 47012 is not empty
+Polyhedron::SetReferences: List 47013 is not empty
+Polyhedron::SetReferences: List 47014 is not empty
+Polyhedron::SetReferences: List 47144 is not empty
+Polyhedron::SetReferences: List 47145 is not empty
+Polyhedron::SetReferences: List 47146 is not empty
+Polyhedron::SetReferences: List 47147 is not empty
+Polyhedron::SetReferences: List 47148 is not empty
+Polyhedron::SetReferences: List 47149 is not empty
+Polyhedron::SetReferences: List 47150 is not empty
+Polyhedron::SetReferences: List 47151 is not empty
+Polyhedron::SetReferences: List 47152 is not empty
+Polyhedron::SetReferences: List 47153 is not empty
+Polyhedron::SetReferences: List 47154 is not empty
+Polyhedron::SetReferences: List 47155 is not empty
+Polyhedron::SetReferences: List 47156 is not empty
+Polyhedron::SetReferences: List 47157 is not empty
+Polyhedron::SetReferences: List 47158 is not empty
+Polyhedron::SetReferences: List 47159 is not empty
+Polyhedron::SetReferences: List 47160 is not empty
+Polyhedron::SetReferences: List 47161 is not empty
+Polyhedron::SetReferences: List 47162 is not empty
+Polyhedron::SetReferences: List 47163 is not empty
+Polyhedron::SetReferences: List 47164 is not empty
+Polyhedron::SetReferences: List 47166 is not empty
+Polyhedron::SetReferences: List 47167 is not empty
+Polyhedron::SetReferences: List 47168 is not empty
+Polyhedron::SetReferences: List 47169 is not empty
+Polyhedron::SetReferences: List 47170 is not empty
+Polyhedron::SetReferences: List 47300 is not empty
+Polyhedron::SetReferences: List 47301 is not empty
+Polyhedron::SetReferences: List 47302 is not empty
+Polyhedron::SetReferences: List 47303 is not empty
+Polyhedron::SetReferences: List 47304 is not empty
+Polyhedron::SetReferences: List 47305 is not empty
+Polyhedron::SetReferences: List 47307 is not empty
+Polyhedron::SetReferences: List 47308 is not empty
+Polyhedron::SetReferences: List 47309 is not empty
+Polyhedron::SetReferences: List 47310 is not empty
+Polyhedron::SetReferences: List 47311 is not empty
+Polyhedron::SetReferences: List 47312 is not empty
+Polyhedron::SetReferences: List 47313 is not empty
+Polyhedron::SetReferences: List 47314 is not empty
+Polyhedron::SetReferences: List 47315 is not empty
+Polyhedron::SetReferences: List 47316 is not empty
+Polyhedron::SetReferences: List 47317 is not empty
+Polyhedron::SetReferences: List 47318 is not empty
+Polyhedron::SetReferences: List 47319 is not empty
+Polyhedron::SetReferences: List 47320 is not empty
+Polyhedron::SetReferences: List 47322 is not empty
+Polyhedron::SetReferences: List 47323 is not empty
+Polyhedron::SetReferences: List 47324 is not empty
+Polyhedron::SetReferences: List 47325 is not empty
+Polyhedron::SetReferences: List 47326 is not empty
+Polyhedron::SetReferences: List 47456 is not empty
+Polyhedron::SetReferences: List 47457 is not empty
+Polyhedron::SetReferences: List 47458 is not empty
+Polyhedron::SetReferences: List 47459 is not empty
+Polyhedron::SetReferences: List 47460 is not empty
+Polyhedron::SetReferences: List 47461 is not empty
+Polyhedron::SetReferences: List 47463 is not empty
+Polyhedron::SetReferences: List 47464 is not empty
+Polyhedron::SetReferences: List 47465 is not empty
+Polyhedron::SetReferences: List 47466 is not empty
+Polyhedron::SetReferences: List 47467 is not empty
+Polyhedron::SetReferences: List 47468 is not empty
+Polyhedron::SetReferences: List 47469 is not empty
+Polyhedron::SetReferences: List 47470 is not empty
+Polyhedron::SetReferences: List 47471 is not empty
+Polyhedron::SetReferences: List 47472 is not empty
+Polyhedron::SetReferences: List 47473 is not empty
+Polyhedron::SetReferences: List 47474 is not empty
+Polyhedron::SetReferences: List 47475 is not empty
+Polyhedron::SetReferences: List 47476 is not empty
+Polyhedron::SetReferences: List 47478 is not empty
+Polyhedron::SetReferences: List 47479 is not empty
+Polyhedron::SetReferences: List 47480 is not empty
+Polyhedron::SetReferences: List 47481 is not empty
+Polyhedron::SetReferences: List 47482 is not empty
+Polyhedron::SetReferences: List 47612 is not empty
+Polyhedron::SetReferences: List 47613 is not empty
+Polyhedron::SetReferences: List 47614 is not empty
+Polyhedron::SetReferences: List 47615 is not empty
+Polyhedron::SetReferences: List 47616 is not empty
+Polyhedron::SetReferences: List 47617 is not empty
+Polyhedron::SetReferences: List 47618 is not empty
+Polyhedron::SetReferences: List 47619 is not empty
+Polyhedron::SetReferences: List 47620 is not empty
+Polyhedron::SetReferences: List 47621 is not empty
+Polyhedron::SetReferences: List 47622 is not empty
+Polyhedron::SetReferences: List 47623 is not empty
+Polyhedron::SetReferences: List 47624 is not empty
+Polyhedron::SetReferences: List 47625 is not empty
+Polyhedron::SetReferences: List 47626 is not empty
+Polyhedron::SetReferences: List 47627 is not empty
+Polyhedron::SetReferences: List 47628 is not empty
+Polyhedron::SetReferences: List 47629 is not empty
+Polyhedron::SetReferences: List 47630 is not empty
+Polyhedron::SetReferences: List 47631 is not empty
+Polyhedron::SetReferences: List 47632 is not empty
+Polyhedron::SetReferences: List 47634 is not empty
+Polyhedron::SetReferences: List 47635 is not empty
+Polyhedron::SetReferences: List 47636 is not empty
+Polyhedron::SetReferences: List 47637 is not empty
+Polyhedron::SetReferences: List 47638 is not empty
+Polyhedron::SetReferences: List 47832 is not empty
+Polyhedron::SetReferences: List 47833 is not empty
+Polyhedron::SetReferences: List 47834 is not empty
+Polyhedron::SetReferences: List 47835 is not empty
+Polyhedron::SetReferences: List 47836 is not empty
+Polyhedron::SetReferences: List 47837 is not empty
+Polyhedron::SetReferences: List 47839 is not empty
+Polyhedron::SetReferences: List 47840 is not empty
+Polyhedron::SetReferences: List 47841 is not empty
+Polyhedron::SetReferences: List 47842 is not empty
+Polyhedron::SetReferences: List 47843 is not empty
+Polyhedron::SetReferences: List 47844 is not empty
+Polyhedron::SetReferences: List 47845 is not empty
+Polyhedron::SetReferences: List 47846 is not empty
+Polyhedron::SetReferences: List 47847 is not empty
+Polyhedron::SetReferences: List 47848 is not empty
+Polyhedron::SetReferences: List 47849 is not empty
+Polyhedron::SetReferences: List 47850 is not empty
+Polyhedron::SetReferences: List 47851 is not empty
+Polyhedron::SetReferences: List 47852 is not empty
+Polyhedron::SetReferences: List 47854 is not empty
+Polyhedron::SetReferences: List 47855 is not empty
+Polyhedron::SetReferences: List 47856 is not empty
+Polyhedron::SetReferences: List 47857 is not empty
+Polyhedron::SetReferences: List 47858 is not empty
+Polyhedron::SetReferences: List 48052 is not empty
+Polyhedron::SetReferences: List 48053 is not empty
+Polyhedron::SetReferences: List 48054 is not empty
+Polyhedron::SetReferences: List 48055 is not empty
+Polyhedron::SetReferences: List 48056 is not empty
+Polyhedron::SetReferences: List 48057 is not empty
+Polyhedron::SetReferences: List 48059 is not empty
+Polyhedron::SetReferences: List 48060 is not empty
+Polyhedron::SetReferences: List 48061 is not empty
+Polyhedron::SetReferences: List 48062 is not empty
+Polyhedron::SetReferences: List 48063 is not empty
+Polyhedron::SetReferences: List 48064 is not empty
+Polyhedron::SetReferences: List 48065 is not empty
+Polyhedron::SetReferences: List 48066 is not empty
+Polyhedron::SetReferences: List 48067 is not empty
+Polyhedron::SetReferences: List 48068 is not empty
+Polyhedron::SetReferences: List 48069 is not empty
+Polyhedron::SetReferences: List 48070 is not empty
+Polyhedron::SetReferences: List 48071 is not empty
+Polyhedron::SetReferences: List 48072 is not empty
+Polyhedron::SetReferences: List 48074 is not empty
+Polyhedron::SetReferences: List 48075 is not empty
+Polyhedron::SetReferences: List 48076 is not empty
+Polyhedron::SetReferences: List 48077 is not empty
+Polyhedron::SetReferences: List 48078 is not empty
+Polyhedron::SetReferences: List 48272 is not empty
+Polyhedron::SetReferences: List 48273 is not empty
+Polyhedron::SetReferences: List 48274 is not empty
+Polyhedron::SetReferences: List 48275 is not empty
+Polyhedron::SetReferences: List 48276 is not empty
+Polyhedron::SetReferences: List 48277 is not empty
+Polyhedron::SetReferences: List 48279 is not empty
+Polyhedron::SetReferences: List 48280 is not empty
+Polyhedron::SetReferences: List 48281 is not empty
+Polyhedron::SetReferences: List 48282 is not empty
+Polyhedron::SetReferences: List 48283 is not empty
+Polyhedron::SetReferences: List 48284 is not empty
+Polyhedron::SetReferences: List 48285 is not empty
+Polyhedron::SetReferences: List 48286 is not empty
+Polyhedron::SetReferences: List 48287 is not empty
+Polyhedron::SetReferences: List 48288 is not empty
+Polyhedron::SetReferences: List 48289 is not empty
+Polyhedron::SetReferences: List 48290 is not empty
+Polyhedron::SetReferences: List 48291 is not empty
+Polyhedron::SetReferences: List 48292 is not empty
+Polyhedron::SetReferences: List 48294 is not empty
+Polyhedron::SetReferences: List 48295 is not empty
+Polyhedron::SetReferences: List 48296 is not empty
+Polyhedron::SetReferences: List 48297 is not empty
+Polyhedron::SetReferences: List 48298 is not empty
+Polyhedron::SetReferences: List 48492 is not empty
+Polyhedron::SetReferences: List 48493 is not empty
+Polyhedron::SetReferences: List 48494 is not empty
+Polyhedron::SetReferences: List 48495 is not empty
+Polyhedron::SetReferences: List 48496 is not empty
+Polyhedron::SetReferences: List 48497 is not empty
+Polyhedron::SetReferences: List 48499 is not empty
+Polyhedron::SetReferences: List 48500 is not empty
+Polyhedron::SetReferences: List 48501 is not empty
+Polyhedron::SetReferences: List 48502 is not empty
+Polyhedron::SetReferences: List 48503 is not empty
+Polyhedron::SetReferences: List 48504 is not empty
+Polyhedron::SetReferences: List 48505 is not empty
+Polyhedron::SetReferences: List 48506 is not empty
+Polyhedron::SetReferences: List 48507 is not empty
+Polyhedron::SetReferences: List 48508 is not empty
+Polyhedron::SetReferences: List 48509 is not empty
+Polyhedron::SetReferences: List 48510 is not empty
+Polyhedron::SetReferences: List 48511 is not empty
+Polyhedron::SetReferences: List 48512 is not empty
+Polyhedron::SetReferences: List 48514 is not empty
+Polyhedron::SetReferences: List 48515 is not empty
+Polyhedron::SetReferences: List 48516 is not empty
+Polyhedron::SetReferences: List 48517 is not empty
+Polyhedron::SetReferences: List 48518 is not empty
+Polyhedron::SetReferences: List 48712 is not empty
+Polyhedron::SetReferences: List 48713 is not empty
+Polyhedron::SetReferences: List 48714 is not empty
+Polyhedron::SetReferences: List 48715 is not empty
+Polyhedron::SetReferences: List 48716 is not empty
+Polyhedron::SetReferences: List 48717 is not empty
+Polyhedron::SetReferences: List 48719 is not empty
+Polyhedron::SetReferences: List 48720 is not empty
+Polyhedron::SetReferences: List 48721 is not empty
+Polyhedron::SetReferences: List 48722 is not empty
+Polyhedron::SetReferences: List 48723 is not empty
+Polyhedron::SetReferences: List 48724 is not empty
+Polyhedron::SetReferences: List 48725 is not empty
+Polyhedron::SetReferences: List 48726 is not empty
+Polyhedron::SetReferences: List 48727 is not empty
+Polyhedron::SetReferences: List 48728 is not empty
+Polyhedron::SetReferences: List 48729 is not empty
+Polyhedron::SetReferences: List 48730 is not empty
+Polyhedron::SetReferences: List 48731 is not empty
+Polyhedron::SetReferences: List 48732 is not empty
+Polyhedron::SetReferences: List 48734 is not empty
+Polyhedron::SetReferences: List 48735 is not empty
+Polyhedron::SetReferences: List 48736 is not empty
+Polyhedron::SetReferences: List 48737 is not empty
+Polyhedron::SetReferences: List 48738 is not empty
+Polyhedron::SetReferences: List 48932 is not empty
+Polyhedron::SetReferences: List 48933 is not empty
+Polyhedron::SetReferences: List 48934 is not empty
+Polyhedron::SetReferences: List 48935 is not empty
+Polyhedron::SetReferences: List 48936 is not empty
+Polyhedron::SetReferences: List 48937 is not empty
+Polyhedron::SetReferences: List 48939 is not empty
+Polyhedron::SetReferences: List 48940 is not empty
+Polyhedron::SetReferences: List 48941 is not empty
+Polyhedron::SetReferences: List 48942 is not empty
+Polyhedron::SetReferences: List 48943 is not empty
+Polyhedron::SetReferences: List 48944 is not empty
+Polyhedron::SetReferences: List 48945 is not empty
+Polyhedron::SetReferences: List 48946 is not empty
+Polyhedron::SetReferences: List 48947 is not empty
+Polyhedron::SetReferences: List 48948 is not empty
+Polyhedron::SetReferences: List 48949 is not empty
+Polyhedron::SetReferences: List 48950 is not empty
+Polyhedron::SetReferences: List 48951 is not empty
+Polyhedron::SetReferences: List 48952 is not empty
+Polyhedron::SetReferences: List 48954 is not empty
+Polyhedron::SetReferences: List 48955 is not empty
+Polyhedron::SetReferences: List 48956 is not empty
+Polyhedron::SetReferences: List 48957 is not empty
+Polyhedron::SetReferences: List 48958 is not empty
+Polyhedron::SetReferences: List 49152 is not empty
+Polyhedron::SetReferences: List 49153 is not empty
+Polyhedron::SetReferences: List 49154 is not empty
+Polyhedron::SetReferences: List 49155 is not empty
+Polyhedron::SetReferences: List 49156 is not empty
+Polyhedron::SetReferences: List 49157 is not empty
+Polyhedron::SetReferences: List 49159 is not empty
+Polyhedron::SetReferences: List 49160 is not empty
+Polyhedron::SetReferences: List 49161 is not empty
+Polyhedron::SetReferences: List 49162 is not empty
+Polyhedron::SetReferences: List 49163 is not empty
+Polyhedron::SetReferences: List 49164 is not empty
+Polyhedron::SetReferences: List 49165 is not empty
+Polyhedron::SetReferences: List 49166 is not empty
+Polyhedron::SetReferences: List 49167 is not empty
+Polyhedron::SetReferences: List 49168 is not empty
+Polyhedron::SetReferences: List 49169 is not empty
+Polyhedron::SetReferences: List 49170 is not empty
+Polyhedron::SetReferences: List 49171 is not empty
+Polyhedron::SetReferences: List 49172 is not empty
+Polyhedron::SetReferences: List 49174 is not empty
+Polyhedron::SetReferences: List 49175 is not empty
+Polyhedron::SetReferences: List 49176 is not empty
+Polyhedron::SetReferences: List 49177 is not empty
+Polyhedron::SetReferences: List 49178 is not empty
+Polyhedron::SetReferences: List 49372 is not empty
+Polyhedron::SetReferences: List 49373 is not empty
+Polyhedron::SetReferences: List 49374 is not empty
+Polyhedron::SetReferences: List 49375 is not empty
+Polyhedron::SetReferences: List 49376 is not empty
+Polyhedron::SetReferences: List 49377 is not empty
+Polyhedron::SetReferences: List 49379 is not empty
+Polyhedron::SetReferences: List 49380 is not empty
+Polyhedron::SetReferences: List 49381 is not empty
+Polyhedron::SetReferences: List 49382 is not empty
+Polyhedron::SetReferences: List 49383 is not empty
+Polyhedron::SetReferences: List 49384 is not empty
+Polyhedron::SetReferences: List 49385 is not empty
+Polyhedron::SetReferences: List 49386 is not empty
+Polyhedron::SetReferences: List 49387 is not empty
+Polyhedron::SetReferences: List 49388 is not empty
+Polyhedron::SetReferences: List 49389 is not empty
+Polyhedron::SetReferences: List 49390 is not empty
+Polyhedron::SetReferences: List 49391 is not empty
+Polyhedron::SetReferences: List 49392 is not empty
+Polyhedron::SetReferences: List 49394 is not empty
+Polyhedron::SetReferences: List 49395 is not empty
+Polyhedron::SetReferences: List 49396 is not empty
+Polyhedron::SetReferences: List 49397 is not empty
+Polyhedron::SetReferences: List 49398 is not empty
+Polyhedron::SetReferences: List 49592 is not empty
+Polyhedron::SetReferences: List 49593 is not empty
+Polyhedron::SetReferences: List 49594 is not empty
+Polyhedron::SetReferences: List 49595 is not empty
+Polyhedron::SetReferences: List 49596 is not empty
+Polyhedron::SetReferences: List 49597 is not empty
+Polyhedron::SetReferences: List 49599 is not empty
+Polyhedron::SetReferences: List 49600 is not empty
+Polyhedron::SetReferences: List 49601 is not empty
+Polyhedron::SetReferences: List 49602 is not empty
+Polyhedron::SetReferences: List 49603 is not empty
+Polyhedron::SetReferences: List 49604 is not empty
+Polyhedron::SetReferences: List 49605 is not empty
+Polyhedron::SetReferences: List 49606 is not empty
+Polyhedron::SetReferences: List 49607 is not empty
+Polyhedron::SetReferences: List 49608 is not empty
+Polyhedron::SetReferences: List 49609 is not empty
+Polyhedron::SetReferences: List 49610 is not empty
+Polyhedron::SetReferences: List 49611 is not empty
+Polyhedron::SetReferences: List 49612 is not empty
+Polyhedron::SetReferences: List 49614 is not empty
+Polyhedron::SetReferences: List 49615 is not empty
+Polyhedron::SetReferences: List 49616 is not empty
+Polyhedron::SetReferences: List 49617 is not empty
+Polyhedron::SetReferences: List 49618 is not empty
+Polyhedron::SetReferences: List 49812 is not empty
+Polyhedron::SetReferences: List 49813 is not empty
+Polyhedron::SetReferences: List 49814 is not empty
+Polyhedron::SetReferences: List 49815 is not empty
+Polyhedron::SetReferences: List 49816 is not empty
+Polyhedron::SetReferences: List 49817 is not empty
+Polyhedron::SetReferences: List 49819 is not empty
+Polyhedron::SetReferences: List 49820 is not empty
+Polyhedron::SetReferences: List 49821 is not empty
+Polyhedron::SetReferences: List 49822 is not empty
+Polyhedron::SetReferences: List 49823 is not empty
+Polyhedron::SetReferences: List 49824 is not empty
+Polyhedron::SetReferences: List 49825 is not empty
+Polyhedron::SetReferences: List 49826 is not empty
+Polyhedron::SetReferences: List 49827 is not empty
+Polyhedron::SetReferences: List 49828 is not empty
+Polyhedron::SetReferences: List 49829 is not empty
+Polyhedron::SetReferences: List 49830 is not empty
+Polyhedron::SetReferences: List 49831 is not empty
+Polyhedron::SetReferences: List 49832 is not empty
+Polyhedron::SetReferences: List 49834 is not empty
+Polyhedron::SetReferences: List 49835 is not empty
+Polyhedron::SetReferences: List 49836 is not empty
+Polyhedron::SetReferences: List 49837 is not empty
+Polyhedron::SetReferences: List 49838 is not empty
+Polyhedron::SetReferences: List 50032 is not empty
+Polyhedron::SetReferences: List 50033 is not empty
+Polyhedron::SetReferences: List 50034 is not empty
+Polyhedron::SetReferences: List 50035 is not empty
+Polyhedron::SetReferences: List 50036 is not empty
+Polyhedron::SetReferences: List 50037 is not empty
+Polyhedron::SetReferences: List 50039 is not empty
+Polyhedron::SetReferences: List 50040 is not empty
+Polyhedron::SetReferences: List 50041 is not empty
+Polyhedron::SetReferences: List 50042 is not empty
+Polyhedron::SetReferences: List 50043 is not empty
+Polyhedron::SetReferences: List 50044 is not empty
+Polyhedron::SetReferences: List 50045 is not empty
+Polyhedron::SetReferences: List 50046 is not empty
+Polyhedron::SetReferences: List 50047 is not empty
+Polyhedron::SetReferences: List 50048 is not empty
+Polyhedron::SetReferences: List 50049 is not empty
+Polyhedron::SetReferences: List 50050 is not empty
+Polyhedron::SetReferences: List 50051 is not empty
+Polyhedron::SetReferences: List 50052 is not empty
+Polyhedron::SetReferences: List 50054 is not empty
+Polyhedron::SetReferences: List 50055 is not empty
+Polyhedron::SetReferences: List 50056 is not empty
+Polyhedron::SetReferences: List 50057 is not empty
+Polyhedron::SetReferences: List 50058 is not empty
+Polyhedron::SetReferences: List 50252 is not empty
+Polyhedron::SetReferences: List 50253 is not empty
+Polyhedron::SetReferences: List 50254 is not empty
+Polyhedron::SetReferences: List 50255 is not empty
+Polyhedron::SetReferences: List 50256 is not empty
+Polyhedron::SetReferences: List 50257 is not empty
+Polyhedron::SetReferences: List 50259 is not empty
+Polyhedron::SetReferences: List 50260 is not empty
+Polyhedron::SetReferences: List 50261 is not empty
+Polyhedron::SetReferences: List 50262 is not empty
+Polyhedron::SetReferences: List 50263 is not empty
+Polyhedron::SetReferences: List 50264 is not empty
+Polyhedron::SetReferences: List 50265 is not empty
+Polyhedron::SetReferences: List 50266 is not empty
+Polyhedron::SetReferences: List 50267 is not empty
+Polyhedron::SetReferences: List 50268 is not empty
+Polyhedron::SetReferences: List 50269 is not empty
+Polyhedron::SetReferences: List 50270 is not empty
+Polyhedron::SetReferences: List 50271 is not empty
+Polyhedron::SetReferences: List 50272 is not empty
+Polyhedron::SetReferences: List 50274 is not empty
+Polyhedron::SetReferences: List 50275 is not empty
+Polyhedron::SetReferences: List 50276 is not empty
+Polyhedron::SetReferences: List 50277 is not empty
+Polyhedron::SetReferences: List 50278 is not empty
+Polyhedron::SetReferences: List 50472 is not empty
+Polyhedron::SetReferences: List 50473 is not empty
+Polyhedron::SetReferences: List 50474 is not empty
+Polyhedron::SetReferences: List 50475 is not empty
+Polyhedron::SetReferences: List 50476 is not empty
+Polyhedron::SetReferences: List 50477 is not empty
+Polyhedron::SetReferences: List 50479 is not empty
+Polyhedron::SetReferences: List 50480 is not empty
+Polyhedron::SetReferences: List 50481 is not empty
+Polyhedron::SetReferences: List 50482 is not empty
+Polyhedron::SetReferences: List 50483 is not empty
+Polyhedron::SetReferences: List 50484 is not empty
+Polyhedron::SetReferences: List 50485 is not empty
+Polyhedron::SetReferences: List 50486 is not empty
+Polyhedron::SetReferences: List 50487 is not empty
+Polyhedron::SetReferences: List 50488 is not empty
+Polyhedron::SetReferences: List 50489 is not empty
+Polyhedron::SetReferences: List 50490 is not empty
+Polyhedron::SetReferences: List 50491 is not empty
+Polyhedron::SetReferences: List 50492 is not empty
+Polyhedron::SetReferences: List 50494 is not empty
+Polyhedron::SetReferences: List 50495 is not empty
+Polyhedron::SetReferences: List 50496 is not empty
+Polyhedron::SetReferences: List 50497 is not empty
+Polyhedron::SetReferences: List 50498 is not empty
+Polyhedron::SetReferences: List 50692 is not empty
+Polyhedron::SetReferences: List 50693 is not empty
+Polyhedron::SetReferences: List 50694 is not empty
+Polyhedron::SetReferences: List 50695 is not empty
+Polyhedron::SetReferences: List 50696 is not empty
+Polyhedron::SetReferences: List 50697 is not empty
+Polyhedron::SetReferences: List 50699 is not empty
+Polyhedron::SetReferences: List 50700 is not empty
+Polyhedron::SetReferences: List 50701 is not empty
+Polyhedron::SetReferences: List 50702 is not empty
+Polyhedron::SetReferences: List 50703 is not empty
+Polyhedron::SetReferences: List 50704 is not empty
+Polyhedron::SetReferences: List 50705 is not empty
+Polyhedron::SetReferences: List 50706 is not empty
+Polyhedron::SetReferences: List 50707 is not empty
+Polyhedron::SetReferences: List 50708 is not empty
+Polyhedron::SetReferences: List 50709 is not empty
+Polyhedron::SetReferences: List 50710 is not empty
+Polyhedron::SetReferences: List 50711 is not empty
+Polyhedron::SetReferences: List 50712 is not empty
+Polyhedron::SetReferences: List 50714 is not empty
+Polyhedron::SetReferences: List 50715 is not empty
+Polyhedron::SetReferences: List 50716 is not empty
+Polyhedron::SetReferences: List 50717 is not empty
+Polyhedron::SetReferences: List 50718 is not empty
+Polyhedron::SetReferences: List 50912 is not empty
+Polyhedron::SetReferences: List 50913 is not empty
+Polyhedron::SetReferences: List 50914 is not empty
+Polyhedron::SetReferences: List 50915 is not empty
+Polyhedron::SetReferences: List 50916 is not empty
+Polyhedron::SetReferences: List 50917 is not empty
+Polyhedron::SetReferences: List 50919 is not empty
+Polyhedron::SetReferences: List 50920 is not empty
+Polyhedron::SetReferences: List 50921 is not empty
+Polyhedron::SetReferences: List 50922 is not empty
+Polyhedron::SetReferences: List 50923 is not empty
+Polyhedron::SetReferences: List 50924 is not empty
+Polyhedron::SetReferences: List 50925 is not empty
+Polyhedron::SetReferences: List 50926 is not empty
+Polyhedron::SetReferences: List 50927 is not empty
+Polyhedron::SetReferences: List 50928 is not empty
+Polyhedron::SetReferences: List 50929 is not empty
+Polyhedron::SetReferences: List 50930 is not empty
+Polyhedron::SetReferences: List 50931 is not empty
+Polyhedron::SetReferences: List 50932 is not empty
+Polyhedron::SetReferences: List 50934 is not empty
+Polyhedron::SetReferences: List 50935 is not empty
+Polyhedron::SetReferences: List 50936 is not empty
+Polyhedron::SetReferences: List 50937 is not empty
+Polyhedron::SetReferences: List 50938 is not empty
+Polyhedron::SetReferences: List 51132 is not empty
+Polyhedron::SetReferences: List 51133 is not empty
+Polyhedron::SetReferences: List 51134 is not empty
+Polyhedron::SetReferences: List 51135 is not empty
+Polyhedron::SetReferences: List 51136 is not empty
+Polyhedron::SetReferences: List 51137 is not empty
+Polyhedron::SetReferences: List 51139 is not empty
+Polyhedron::SetReferences: List 51140 is not empty
+Polyhedron::SetReferences: List 51141 is not empty
+Polyhedron::SetReferences: List 51142 is not empty
+Polyhedron::SetReferences: List 51143 is not empty
+Polyhedron::SetReferences: List 51144 is not empty
+Polyhedron::SetReferences: List 51145 is not empty
+Polyhedron::SetReferences: List 51146 is not empty
+Polyhedron::SetReferences: List 51147 is not empty
+Polyhedron::SetReferences: List 51148 is not empty
+Polyhedron::SetReferences: List 51149 is not empty
+Polyhedron::SetReferences: List 51150 is not empty
+Polyhedron::SetReferences: List 51151 is not empty
+Polyhedron::SetReferences: List 51152 is not empty
+Polyhedron::SetReferences: List 51154 is not empty
+Polyhedron::SetReferences: List 51155 is not empty
+Polyhedron::SetReferences: List 51156 is not empty
+Polyhedron::SetReferences: List 51157 is not empty
+Polyhedron::SetReferences: List 51158 is not empty
+Polyhedron::SetReferences: List 51352 is not empty
+Polyhedron::SetReferences: List 51353 is not empty
+Polyhedron::SetReferences: List 51354 is not empty
+Polyhedron::SetReferences: List 51355 is not empty
+Polyhedron::SetReferences: List 51356 is not empty
+Polyhedron::SetReferences: List 51357 is not empty
+Polyhedron::SetReferences: List 51359 is not empty
+Polyhedron::SetReferences: List 51360 is not empty
+Polyhedron::SetReferences: List 51361 is not empty
+Polyhedron::SetReferences: List 51362 is not empty
+Polyhedron::SetReferences: List 51363 is not empty
+Polyhedron::SetReferences: List 51364 is not empty
+Polyhedron::SetReferences: List 51365 is not empty
+Polyhedron::SetReferences: List 51366 is not empty
+Polyhedron::SetReferences: List 51367 is not empty
+Polyhedron::SetReferences: List 51368 is not empty
+Polyhedron::SetReferences: List 51369 is not empty
+Polyhedron::SetReferences: List 51370 is not empty
+Polyhedron::SetReferences: List 51371 is not empty
+Polyhedron::SetReferences: List 51372 is not empty
+Polyhedron::SetReferences: List 51374 is not empty
+Polyhedron::SetReferences: List 51375 is not empty
+Polyhedron::SetReferences: List 51376 is not empty
+Polyhedron::SetReferences: List 51377 is not empty
+Polyhedron::SetReferences: List 51378 is not empty
+Polyhedron::SetReferences: List 51572 is not empty
+Polyhedron::SetReferences: List 51573 is not empty
+Polyhedron::SetReferences: List 51574 is not empty
+Polyhedron::SetReferences: List 51575 is not empty
+Polyhedron::SetReferences: List 51576 is not empty
+Polyhedron::SetReferences: List 51577 is not empty
+Polyhedron::SetReferences: List 51579 is not empty
+Polyhedron::SetReferences: List 51580 is not empty
+Polyhedron::SetReferences: List 51581 is not empty
+Polyhedron::SetReferences: List 51582 is not empty
+Polyhedron::SetReferences: List 51583 is not empty
+Polyhedron::SetReferences: List 51584 is not empty
+Polyhedron::SetReferences: List 51585 is not empty
+Polyhedron::SetReferences: List 51586 is not empty
+Polyhedron::SetReferences: List 51587 is not empty
+Polyhedron::SetReferences: List 51588 is not empty
+Polyhedron::SetReferences: List 51589 is not empty
+Polyhedron::SetReferences: List 51590 is not empty
+Polyhedron::SetReferences: List 51591 is not empty
+Polyhedron::SetReferences: List 51592 is not empty
+Polyhedron::SetReferences: List 51594 is not empty
+Polyhedron::SetReferences: List 51595 is not empty
+Polyhedron::SetReferences: List 51596 is not empty
+Polyhedron::SetReferences: List 51597 is not empty
+Polyhedron::SetReferences: List 51598 is not empty
+Polyhedron::SetReferences: List 51792 is not empty
+Polyhedron::SetReferences: List 51793 is not empty
+Polyhedron::SetReferences: List 51794 is not empty
+Polyhedron::SetReferences: List 51795 is not empty
+Polyhedron::SetReferences: List 51796 is not empty
+Polyhedron::SetReferences: List 51797 is not empty
+Polyhedron::SetReferences: List 51799 is not empty
+Polyhedron::SetReferences: List 51800 is not empty
+Polyhedron::SetReferences: List 51801 is not empty
+Polyhedron::SetReferences: List 51802 is not empty
+Polyhedron::SetReferences: List 51803 is not empty
+Polyhedron::SetReferences: List 51804 is not empty
+Polyhedron::SetReferences: List 51805 is not empty
+Polyhedron::SetReferences: List 51806 is not empty
+Polyhedron::SetReferences: List 51807 is not empty
+Polyhedron::SetReferences: List 51808 is not empty
+Polyhedron::SetReferences: List 51809 is not empty
+Polyhedron::SetReferences: List 51810 is not empty
+Polyhedron::SetReferences: List 51811 is not empty
+Polyhedron::SetReferences: List 51812 is not empty
+Polyhedron::SetReferences: List 51814 is not empty
+Polyhedron::SetReferences: List 51815 is not empty
+Polyhedron::SetReferences: List 51816 is not empty
+Polyhedron::SetReferences: List 51817 is not empty
+Polyhedron::SetReferences: List 51818 is not empty
+Polyhedron::SetReferences: List 52012 is not empty
+Polyhedron::SetReferences: List 52013 is not empty
+Polyhedron::SetReferences: List 52014 is not empty
+Polyhedron::SetReferences: List 52015 is not empty
+Polyhedron::SetReferences: List 52016 is not empty
+Polyhedron::SetReferences: List 52017 is not empty
+Polyhedron::SetReferences: List 52019 is not empty
+Polyhedron::SetReferences: List 52020 is not empty
+Polyhedron::SetReferences: List 52021 is not empty
+Polyhedron::SetReferences: List 52022 is not empty
+Polyhedron::SetReferences: List 52023 is not empty
+Polyhedron::SetReferences: List 52024 is not empty
+Polyhedron::SetReferences: List 52025 is not empty
+Polyhedron::SetReferences: List 52026 is not empty
+Polyhedron::SetReferences: List 52027 is not empty
+Polyhedron::SetReferences: List 52028 is not empty
+Polyhedron::SetReferences: List 52029 is not empty
+Polyhedron::SetReferences: List 52030 is not empty
+Polyhedron::SetReferences: List 52031 is not empty
+Polyhedron::SetReferences: List 52032 is not empty
+Polyhedron::SetReferences: List 52034 is not empty
+Polyhedron::SetReferences: List 52035 is not empty
+Polyhedron::SetReferences: List 52036 is not empty
+Polyhedron::SetReferences: List 52037 is not empty
+Polyhedron::SetReferences: List 52038 is not empty
+Polyhedron::SetReferences: List 52232 is not empty
+Polyhedron::SetReferences: List 52233 is not empty
+Polyhedron::SetReferences: List 52234 is not empty
+Polyhedron::SetReferences: List 52235 is not empty
+Polyhedron::SetReferences: List 52236 is not empty
+Polyhedron::SetReferences: List 52237 is not empty
+Polyhedron::SetReferences: List 52239 is not empty
+Polyhedron::SetReferences: List 52240 is not empty
+Polyhedron::SetReferences: List 52241 is not empty
+Polyhedron::SetReferences: List 52242 is not empty
+Polyhedron::SetReferences: List 52243 is not empty
+Polyhedron::SetReferences: List 52244 is not empty
+Polyhedron::SetReferences: List 52245 is not empty
+Polyhedron::SetReferences: List 52246 is not empty
+Polyhedron::SetReferences: List 52247 is not empty
+Polyhedron::SetReferences: List 52248 is not empty
+Polyhedron::SetReferences: List 52249 is not empty
+Polyhedron::SetReferences: List 52250 is not empty
+Polyhedron::SetReferences: List 52251 is not empty
+Polyhedron::SetReferences: List 52252 is not empty
+Polyhedron::SetReferences: List 52254 is not empty
+Polyhedron::SetReferences: List 52255 is not empty
+Polyhedron::SetReferences: List 52256 is not empty
+Polyhedron::SetReferences: List 52257 is not empty
+Polyhedron::SetReferences: List 52258 is not empty
+Polyhedron::SetReferences: List 52452 is not empty
+Polyhedron::SetReferences: List 52453 is not empty
+Polyhedron::SetReferences: List 52454 is not empty
+Polyhedron::SetReferences: List 52455 is not empty
+Polyhedron::SetReferences: List 52456 is not empty
+Polyhedron::SetReferences: List 52457 is not empty
+Polyhedron::SetReferences: List 52459 is not empty
+Polyhedron::SetReferences: List 52460 is not empty
+Polyhedron::SetReferences: List 52461 is not empty
+Polyhedron::SetReferences: List 52462 is not empty
+Polyhedron::SetReferences: List 52463 is not empty
+Polyhedron::SetReferences: List 52464 is not empty
+Polyhedron::SetReferences: List 52465 is not empty
+Polyhedron::SetReferences: List 52466 is not empty
+Polyhedron::SetReferences: List 52467 is not empty
+Polyhedron::SetReferences: List 52468 is not empty
+Polyhedron::SetReferences: List 52469 is not empty
+Polyhedron::SetReferences: List 52470 is not empty
+Polyhedron::SetReferences: List 52471 is not empty
+Polyhedron::SetReferences: List 52472 is not empty
+Polyhedron::SetReferences: List 52474 is not empty
+Polyhedron::SetReferences: List 52475 is not empty
+Polyhedron::SetReferences: List 52476 is not empty
+Polyhedron::SetReferences: List 52477 is not empty
+Polyhedron::SetReferences: List 52478 is not empty
+Polyhedron::SetReferences: List 52672 is not empty
+Polyhedron::SetReferences: List 52673 is not empty
+Polyhedron::SetReferences: List 52674 is not empty
+Polyhedron::SetReferences: List 52675 is not empty
+Polyhedron::SetReferences: List 52676 is not empty
+Polyhedron::SetReferences: List 52677 is not empty
+Polyhedron::SetReferences: List 52679 is not empty
+Polyhedron::SetReferences: List 52680 is not empty
+Polyhedron::SetReferences: List 52681 is not empty
+Polyhedron::SetReferences: List 52682 is not empty
+Polyhedron::SetReferences: List 52683 is not empty
+Polyhedron::SetReferences: List 52684 is not empty
+Polyhedron::SetReferences: List 52685 is not empty
+Polyhedron::SetReferences: List 52686 is not empty
+Polyhedron::SetReferences: List 52687 is not empty
+Polyhedron::SetReferences: List 52688 is not empty
+Polyhedron::SetReferences: List 52689 is not empty
+Polyhedron::SetReferences: List 52690 is not empty
+Polyhedron::SetReferences: List 52691 is not empty
+Polyhedron::SetReferences: List 52692 is not empty
+Polyhedron::SetReferences: List 52694 is not empty
+Polyhedron::SetReferences: List 52695 is not empty
+Polyhedron::SetReferences: List 52696 is not empty
+Polyhedron::SetReferences: List 52697 is not empty
+Polyhedron::SetReferences: List 52698 is not empty
+Polyhedron::SetReferences: List 52892 is not empty
+Polyhedron::SetReferences: List 52893 is not empty
+Polyhedron::SetReferences: List 52894 is not empty
+Polyhedron::SetReferences: List 52895 is not empty
+Polyhedron::SetReferences: List 52896 is not empty
+Polyhedron::SetReferences: List 52897 is not empty
+Polyhedron::SetReferences: List 52899 is not empty
+Polyhedron::SetReferences: List 52900 is not empty
+Polyhedron::SetReferences: List 52901 is not empty
+Polyhedron::SetReferences: List 52902 is not empty
+Polyhedron::SetReferences: List 52903 is not empty
+Polyhedron::SetReferences: List 52904 is not empty
+Polyhedron::SetReferences: List 52905 is not empty
+Polyhedron::SetReferences: List 52906 is not empty
+Polyhedron::SetReferences: List 52907 is not empty
+Polyhedron::SetReferences: List 52908 is not empty
+Polyhedron::SetReferences: List 52909 is not empty
+Polyhedron::SetReferences: List 52910 is not empty
+Polyhedron::SetReferences: List 52911 is not empty
+Polyhedron::SetReferences: List 52912 is not empty
+Polyhedron::SetReferences: List 52914 is not empty
+Polyhedron::SetReferences: List 52915 is not empty
+Polyhedron::SetReferences: List 52916 is not empty
+Polyhedron::SetReferences: List 52917 is not empty
+Polyhedron::SetReferences: List 52918 is not empty
+Polyhedron::SetReferences: List 53080 is not empty
+Polyhedron::SetReferences: List 53081 is not empty
+Polyhedron::SetReferences: List 53082 is not empty
+Polyhedron::SetReferences: List 53083 is not empty
+Polyhedron::SetReferences: List 53084 is not empty
+Polyhedron::SetReferences: List 53085 is not empty
+Polyhedron::SetReferences: List 53086 is not empty
+Polyhedron::SetReferences: List 53087 is not empty
+Polyhedron::SetReferences: List 53088 is not empty
+Polyhedron::SetReferences: List 53089 is not empty
+Polyhedron::SetReferences: List 53090 is not empty
+Polyhedron::SetReferences: List 53091 is not empty
+Polyhedron::SetReferences: List 53092 is not empty
+Polyhedron::SetReferences: List 53093 is not empty
+Polyhedron::SetReferences: List 53094 is not empty
+Polyhedron::SetReferences: List 53095 is not empty
+Polyhedron::SetReferences: List 53096 is not empty
+Polyhedron::SetReferences: List 53097 is not empty
+Polyhedron::SetReferences: List 53098 is not empty
+Polyhedron::SetReferences: List 53099 is not empty
+Polyhedron::SetReferences: List 53100 is not empty
+Polyhedron::SetReferences: List 53102 is not empty
+Polyhedron::SetReferences: List 53103 is not empty
+Polyhedron::SetReferences: List 53104 is not empty
+Polyhedron::SetReferences: List 53105 is not empty
+Polyhedron::SetReferences: List 53106 is not empty
+Polyhedron::SetReferences: List 53332 is not empty
+Polyhedron::SetReferences: List 53333 is not empty
+Polyhedron::SetReferences: List 53334 is not empty
+Polyhedron::SetReferences: List 53335 is not empty
+Polyhedron::SetReferences: List 53336 is not empty
+Polyhedron::SetReferences: List 53337 is not empty
+Polyhedron::SetReferences: List 53339 is not empty
+Polyhedron::SetReferences: List 53340 is not empty
+Polyhedron::SetReferences: List 53341 is not empty
+Polyhedron::SetReferences: List 53342 is not empty
+Polyhedron::SetReferences: List 53343 is not empty
+Polyhedron::SetReferences: List 53344 is not empty
+Polyhedron::SetReferences: List 53345 is not empty
+Polyhedron::SetReferences: List 53346 is not empty
+Polyhedron::SetReferences: List 53347 is not empty
+Polyhedron::SetReferences: List 53348 is not empty
+Polyhedron::SetReferences: List 53349 is not empty
+Polyhedron::SetReferences: List 53350 is not empty
+Polyhedron::SetReferences: List 53351 is not empty
+Polyhedron::SetReferences: List 53352 is not empty
+Polyhedron::SetReferences: List 53354 is not empty
+Polyhedron::SetReferences: List 53355 is not empty
+Polyhedron::SetReferences: List 53356 is not empty
+Polyhedron::SetReferences: List 53357 is not empty
+Polyhedron::SetReferences: List 53358 is not empty
+Polyhedron::SetReferences: List 53584 is not empty
+Polyhedron::SetReferences: List 53585 is not empty
+Polyhedron::SetReferences: List 53586 is not empty
+Polyhedron::SetReferences: List 53587 is not empty
+Polyhedron::SetReferences: List 53588 is not empty
+Polyhedron::SetReferences: List 53589 is not empty
+Polyhedron::SetReferences: List 53590 is not empty
+Polyhedron::SetReferences: List 53591 is not empty
+Polyhedron::SetReferences: List 53592 is not empty
+Polyhedron::SetReferences: List 53593 is not empty
+Polyhedron::SetReferences: List 53594 is not empty
+Polyhedron::SetReferences: List 53595 is not empty
+Polyhedron::SetReferences: List 53596 is not empty
+Polyhedron::SetReferences: List 53597 is not empty
+Polyhedron::SetReferences: List 53598 is not empty
+Polyhedron::SetReferences: List 53599 is not empty
+Polyhedron::SetReferences: List 53600 is not empty
+Polyhedron::SetReferences: List 53601 is not empty
+Polyhedron::SetReferences: List 53602 is not empty
+Polyhedron::SetReferences: List 53603 is not empty
+Polyhedron::SetReferences: List 53604 is not empty
+Polyhedron::SetReferences: List 53606 is not empty
+Polyhedron::SetReferences: List 53607 is not empty
+Polyhedron::SetReferences: List 53608 is not empty
+Polyhedron::SetReferences: List 53609 is not empty
+Polyhedron::SetReferences: List 53610 is not empty
+Polyhedron::SetReferences: List 53836 is not empty
+Polyhedron::SetReferences: List 53837 is not empty
+Polyhedron::SetReferences: List 53838 is not empty
+Polyhedron::SetReferences: List 53839 is not empty
+Polyhedron::SetReferences: List 53840 is not empty
+Polyhedron::SetReferences: List 53841 is not empty
+Polyhedron::SetReferences: List 53843 is not empty
+Polyhedron::SetReferences: List 53844 is not empty
+Polyhedron::SetReferences: List 53845 is not empty
+Polyhedron::SetReferences: List 53846 is not empty
+Polyhedron::SetReferences: List 53847 is not empty
+Polyhedron::SetReferences: List 53848 is not empty
+Polyhedron::SetReferences: List 53849 is not empty
+Polyhedron::SetReferences: List 53850 is not empty
+Polyhedron::SetReferences: List 53851 is not empty
+Polyhedron::SetReferences: List 53852 is not empty
+Polyhedron::SetReferences: List 53853 is not empty
+Polyhedron::SetReferences: List 53854 is not empty
+Polyhedron::SetReferences: List 53855 is not empty
+Polyhedron::SetReferences: List 53856 is not empty
+Polyhedron::SetReferences: List 53858 is not empty
+Polyhedron::SetReferences: List 53859 is not empty
+Polyhedron::SetReferences: List 53860 is not empty
+Polyhedron::SetReferences: List 53861 is not empty
+Polyhedron::SetReferences: List 53862 is not empty
+Polyhedron::SetReferences: List 54088 is not empty
+Polyhedron::SetReferences: List 54089 is not empty
+Polyhedron::SetReferences: List 54090 is not empty
+Polyhedron::SetReferences: List 54091 is not empty
+Polyhedron::SetReferences: List 54092 is not empty
+Polyhedron::SetReferences: List 54093 is not empty
+Polyhedron::SetReferences: List 54095 is not empty
+Polyhedron::SetReferences: List 54096 is not empty
+Polyhedron::SetReferences: List 54097 is not empty
+Polyhedron::SetReferences: List 54098 is not empty
+Polyhedron::SetReferences: List 54099 is not empty
+Polyhedron::SetReferences: List 54100 is not empty
+Polyhedron::SetReferences: List 54101 is not empty
+Polyhedron::SetReferences: List 54102 is not empty
+Polyhedron::SetReferences: List 54103 is not empty
+Polyhedron::SetReferences: List 54104 is not empty
+Polyhedron::SetReferences: List 54105 is not empty
+Polyhedron::SetReferences: List 54106 is not empty
+Polyhedron::SetReferences: List 54107 is not empty
+Polyhedron::SetReferences: List 54108 is not empty
+Polyhedron::SetReferences: List 54110 is not empty
+Polyhedron::SetReferences: List 54111 is not empty
+Polyhedron::SetReferences: List 54112 is not empty
+Polyhedron::SetReferences: List 54113 is not empty
+Polyhedron::SetReferences: List 54114 is not empty
+Polyhedron::SetReferences: List 54340 is not empty
+Polyhedron::SetReferences: List 54341 is not empty
+Polyhedron::SetReferences: List 54342 is not empty
+Polyhedron::SetReferences: List 54343 is not empty
+Polyhedron::SetReferences: List 54344 is not empty
+Polyhedron::SetReferences: List 54345 is not empty
+Polyhedron::SetReferences: List 54346 is not empty
+Polyhedron::SetReferences: List 54347 is not empty
+Polyhedron::SetReferences: List 54348 is not empty
+Polyhedron::SetReferences: List 54349 is not empty
+Polyhedron::SetReferences: List 54350 is not empty
+Polyhedron::SetReferences: List 54351 is not empty
+Polyhedron::SetReferences: List 54352 is not empty
+Polyhedron::SetReferences: List 54353 is not empty
+Polyhedron::SetReferences: List 54354 is not empty
+Polyhedron::SetReferences: List 54355 is not empty
+Polyhedron::SetReferences: List 54356 is not empty
+Polyhedron::SetReferences: List 54357 is not empty
+Polyhedron::SetReferences: List 54358 is not empty
+Polyhedron::SetReferences: List 54359 is not empty
+Polyhedron::SetReferences: List 54360 is not empty
+Polyhedron::SetReferences: List 54362 is not empty
+Polyhedron::SetReferences: List 54363 is not empty
+Polyhedron::SetReferences: List 54364 is not empty
+Polyhedron::SetReferences: List 54365 is not empty
+Polyhedron::SetReferences: List 54366 is not empty
+Polyhedron::SetReferences: List 54592 is not empty
+Polyhedron::SetReferences: List 54593 is not empty
+Polyhedron::SetReferences: List 54594 is not empty
+Polyhedron::SetReferences: List 54595 is not empty
+Polyhedron::SetReferences: List 54596 is not empty
+Polyhedron::SetReferences: List 54597 is not empty
+Polyhedron::SetReferences: List 54598 is not empty
+Polyhedron::SetReferences: List 54599 is not empty
+Polyhedron::SetReferences: List 54600 is not empty
+Polyhedron::SetReferences: List 54601 is not empty
+Polyhedron::SetReferences: List 54602 is not empty
+Polyhedron::SetReferences: List 54603 is not empty
+Polyhedron::SetReferences: List 54604 is not empty
+Polyhedron::SetReferences: List 54605 is not empty
+Polyhedron::SetReferences: List 54606 is not empty
+Polyhedron::SetReferences: List 54607 is not empty
+Polyhedron::SetReferences: List 54608 is not empty
+Polyhedron::SetReferences: List 54609 is not empty
+Polyhedron::SetReferences: List 54610 is not empty
+Polyhedron::SetReferences: List 54611 is not empty
+Polyhedron::SetReferences: List 54612 is not empty
+Polyhedron::SetReferences: List 54614 is not empty
+Polyhedron::SetReferences: List 54615 is not empty
+Polyhedron::SetReferences: List 54616 is not empty
+Polyhedron::SetReferences: List 54617 is not empty
+Polyhedron::SetReferences: List 54618 is not empty
+Polyhedron::SetReferences: List 54844 is not empty
+Polyhedron::SetReferences: List 54845 is not empty
+Polyhedron::SetReferences: List 54846 is not empty
+Polyhedron::SetReferences: List 54847 is not empty
+Polyhedron::SetReferences: List 54848 is not empty
+Polyhedron::SetReferences: List 54849 is not empty
+Polyhedron::SetReferences: List 54850 is not empty
+Polyhedron::SetReferences: List 54851 is not empty
+Polyhedron::SetReferences: List 54852 is not empty
+Polyhedron::SetReferences: List 54853 is not empty
+Polyhedron::SetReferences: List 54854 is not empty
+Polyhedron::SetReferences: List 54855 is not empty
+Polyhedron::SetReferences: List 54856 is not empty
+Polyhedron::SetReferences: List 54857 is not empty
+Polyhedron::SetReferences: List 54858 is not empty
+Polyhedron::SetReferences: List 54859 is not empty
+Polyhedron::SetReferences: List 54860 is not empty
+Polyhedron::SetReferences: List 54861 is not empty
+Polyhedron::SetReferences: List 54862 is not empty
+Polyhedron::SetReferences: List 54863 is not empty
+Polyhedron::SetReferences: List 54864 is not empty
+Polyhedron::SetReferences: List 54866 is not empty
+Polyhedron::SetReferences: List 54867 is not empty
+Polyhedron::SetReferences: List 54868 is not empty
+Polyhedron::SetReferences: List 54869 is not empty
+Polyhedron::SetReferences: List 54870 is not empty
+Polyhedron::SetReferences: List 55096 is not empty
+Polyhedron::SetReferences: List 55097 is not empty
+Polyhedron::SetReferences: List 55098 is not empty
+Polyhedron::SetReferences: List 55099 is not empty
+Polyhedron::SetReferences: List 55100 is not empty
+Polyhedron::SetReferences: List 55101 is not empty
+Polyhedron::SetReferences: List 55103 is not empty
+Polyhedron::SetReferences: List 55104 is not empty
+Polyhedron::SetReferences: List 55105 is not empty
+Polyhedron::SetReferences: List 55106 is not empty
+Polyhedron::SetReferences: List 55107 is not empty
+Polyhedron::SetReferences: List 55108 is not empty
+Polyhedron::SetReferences: List 55109 is not empty
+Polyhedron::SetReferences: List 55110 is not empty
+Polyhedron::SetReferences: List 55111 is not empty
+Polyhedron::SetReferences: List 55112 is not empty
+Polyhedron::SetReferences: List 55113 is not empty
+Polyhedron::SetReferences: List 55114 is not empty
+Polyhedron::SetReferences: List 55115 is not empty
+Polyhedron::SetReferences: List 55116 is not empty
+Polyhedron::SetReferences: List 55118 is not empty
+Polyhedron::SetReferences: List 55119 is not empty
+Polyhedron::SetReferences: List 55120 is not empty
+Polyhedron::SetReferences: List 55121 is not empty
+Polyhedron::SetReferences: List 55122 is not empty
+Polyhedron::SetReferences: List 55284 is not empty
+Polyhedron::SetReferences: List 55285 is not empty
+Polyhedron::SetReferences: List 55286 is not empty
+Polyhedron::SetReferences: List 55287 is not empty
+Polyhedron::SetReferences: List 55288 is not empty
+Polyhedron::SetReferences: List 55289 is not empty
+Polyhedron::SetReferences: List 55291 is not empty
+Polyhedron::SetReferences: List 55292 is not empty
+Polyhedron::SetReferences: List 55293 is not empty
+Polyhedron::SetReferences: List 55294 is not empty
+Polyhedron::SetReferences: List 55295 is not empty
+Polyhedron::SetReferences: List 55296 is not empty
+Polyhedron::SetReferences: List 55297 is not empty
+Polyhedron::SetReferences: List 55298 is not empty
+Polyhedron::SetReferences: List 55299 is not empty
+Polyhedron::SetReferences: List 55300 is not empty
+Polyhedron::SetReferences: List 55301 is not empty
+Polyhedron::SetReferences: List 55302 is not empty
+Polyhedron::SetReferences: List 55303 is not empty
+Polyhedron::SetReferences: List 55304 is not empty
+Polyhedron::SetReferences: List 55306 is not empty
+Polyhedron::SetReferences: List 55307 is not empty
+Polyhedron::SetReferences: List 55308 is not empty
+Polyhedron::SetReferences: List 55309 is not empty
+Polyhedron::SetReferences: List 55310 is not empty
+Polyhedron::SetReferences: List 55472 is not empty
+Polyhedron::SetReferences: List 55473 is not empty
+Polyhedron::SetReferences: List 55474 is not empty
+Polyhedron::SetReferences: List 55475 is not empty
+Polyhedron::SetReferences: List 55476 is not empty
+Polyhedron::SetReferences: List 55477 is not empty
+Polyhedron::SetReferences: List 55479 is not empty
+Polyhedron::SetReferences: List 55480 is not empty
+Polyhedron::SetReferences: List 55481 is not empty
+Polyhedron::SetReferences: List 55482 is not empty
+Polyhedron::SetReferences: List 55483 is not empty
+Polyhedron::SetReferences: List 55484 is not empty
+Polyhedron::SetReferences: List 55485 is not empty
+Polyhedron::SetReferences: List 55486 is not empty
+Polyhedron::SetReferences: List 55487 is not empty
+Polyhedron::SetReferences: List 55488 is not empty
+Polyhedron::SetReferences: List 55489 is not empty
+Polyhedron::SetReferences: List 55490 is not empty
+Polyhedron::SetReferences: List 55491 is not empty
+Polyhedron::SetReferences: List 55492 is not empty
+Polyhedron::SetReferences: List 55494 is not empty
+Polyhedron::SetReferences: List 55495 is not empty
+Polyhedron::SetReferences: List 55496 is not empty
+Polyhedron::SetReferences: List 55497 is not empty
+Polyhedron::SetReferences: List 55498 is not empty
+Polyhedron::SetReferences: List 55660 is not empty
+Polyhedron::SetReferences: List 55661 is not empty
+Polyhedron::SetReferences: List 55662 is not empty
+Polyhedron::SetReferences: List 55663 is not empty
+Polyhedron::SetReferences: List 55664 is not empty
+Polyhedron::SetReferences: List 55665 is not empty
+Polyhedron::SetReferences: List 55667 is not empty
+Polyhedron::SetReferences: List 55668 is not empty
+Polyhedron::SetReferences: List 55669 is not empty
+Polyhedron::SetReferences: List 55670 is not empty
+Polyhedron::SetReferences: List 55671 is not empty
+Polyhedron::SetReferences: List 55672 is not empty
+Polyhedron::SetReferences: List 55673 is not empty
+Polyhedron::SetReferences: List 55674 is not empty
+Polyhedron::SetReferences: List 55675 is not empty
+Polyhedron::SetReferences: List 55676 is not empty
+Polyhedron::SetReferences: List 55677 is not empty
+Polyhedron::SetReferences: List 55678 is not empty
+Polyhedron::SetReferences: List 55679 is not empty
+Polyhedron::SetReferences: List 55680 is not empty
+Polyhedron::SetReferences: List 55682 is not empty
+Polyhedron::SetReferences: List 55683 is not empty
+Polyhedron::SetReferences: List 55684 is not empty
+Polyhedron::SetReferences: List 55685 is not empty
+Polyhedron::SetReferences: List 55686 is not empty
+Polyhedron::SetReferences: List 55848 is not empty
+Polyhedron::SetReferences: List 55849 is not empty
+Polyhedron::SetReferences: List 55850 is not empty
+Polyhedron::SetReferences: List 55851 is not empty
+Polyhedron::SetReferences: List 55852 is not empty
+Polyhedron::SetReferences: List 55853 is not empty
+Polyhedron::SetReferences: List 55855 is not empty
+Polyhedron::SetReferences: List 55856 is not empty
+Polyhedron::SetReferences: List 55857 is not empty
+Polyhedron::SetReferences: List 55858 is not empty
+Polyhedron::SetReferences: List 55859 is not empty
+Polyhedron::SetReferences: List 55860 is not empty
+Polyhedron::SetReferences: List 55861 is not empty
+Polyhedron::SetReferences: List 55862 is not empty
+Polyhedron::SetReferences: List 55863 is not empty
+Polyhedron::SetReferences: List 55864 is not empty
+Polyhedron::SetReferences: List 55865 is not empty
+Polyhedron::SetReferences: List 55866 is not empty
+Polyhedron::SetReferences: List 55867 is not empty
+Polyhedron::SetReferences: List 55868 is not empty
+Polyhedron::SetReferences: List 55870 is not empty
+Polyhedron::SetReferences: List 55871 is not empty
+Polyhedron::SetReferences: List 55872 is not empty
+Polyhedron::SetReferences: List 55873 is not empty
+Polyhedron::SetReferences: List 55874 is not empty
+Polyhedron::SetReferences: List 56036 is not empty
+Polyhedron::SetReferences: List 56037 is not empty
+Polyhedron::SetReferences: List 56038 is not empty
+Polyhedron::SetReferences: List 56039 is not empty
+Polyhedron::SetReferences: List 56040 is not empty
+Polyhedron::SetReferences: List 56041 is not empty
+Polyhedron::SetReferences: List 56043 is not empty
+Polyhedron::SetReferences: List 56044 is not empty
+Polyhedron::SetReferences: List 56045 is not empty
+Polyhedron::SetReferences: List 56046 is not empty
+Polyhedron::SetReferences: List 56047 is not empty
+Polyhedron::SetReferences: List 56048 is not empty
+Polyhedron::SetReferences: List 56049 is not empty
+Polyhedron::SetReferences: List 56050 is not empty
+Polyhedron::SetReferences: List 56051 is not empty
+Polyhedron::SetReferences: List 56052 is not empty
+Polyhedron::SetReferences: List 56053 is not empty
+Polyhedron::SetReferences: List 56054 is not empty
+Polyhedron::SetReferences: List 56055 is not empty
+Polyhedron::SetReferences: List 56056 is not empty
+Polyhedron::SetReferences: List 56058 is not empty
+Polyhedron::SetReferences: List 56059 is not empty
+Polyhedron::SetReferences: List 56060 is not empty
+Polyhedron::SetReferences: List 56061 is not empty
+Polyhedron::SetReferences: List 56062 is not empty
+Polyhedron::SetReferences: List 56224 is not empty
+Polyhedron::SetReferences: List 56225 is not empty
+Polyhedron::SetReferences: List 56226 is not empty
+Polyhedron::SetReferences: List 56227 is not empty
+Polyhedron::SetReferences: List 56228 is not empty
+Polyhedron::SetReferences: List 56229 is not empty
+Polyhedron::SetReferences: List 56231 is not empty
+Polyhedron::SetReferences: List 56232 is not empty
+Polyhedron::SetReferences: List 56233 is not empty
+Polyhedron::SetReferences: List 56234 is not empty
+Polyhedron::SetReferences: List 56235 is not empty
+Polyhedron::SetReferences: List 56236 is not empty
+Polyhedron::SetReferences: List 56237 is not empty
+Polyhedron::SetReferences: List 56238 is not empty
+Polyhedron::SetReferences: List 56239 is not empty
+Polyhedron::SetReferences: List 56240 is not empty
+Polyhedron::SetReferences: List 56241 is not empty
+Polyhedron::SetReferences: List 56242 is not empty
+Polyhedron::SetReferences: List 56243 is not empty
+Polyhedron::SetReferences: List 56244 is not empty
+Polyhedron::SetReferences: List 56246 is not empty
+Polyhedron::SetReferences: List 56247 is not empty
+Polyhedron::SetReferences: List 56248 is not empty
+Polyhedron::SetReferences: List 56249 is not empty
+Polyhedron::SetReferences: List 56250 is not empty
+Polyhedron::SetReferences: List 56412 is not empty
+Polyhedron::SetReferences: List 56413 is not empty
+Polyhedron::SetReferences: List 56414 is not empty
+Polyhedron::SetReferences: List 56415 is not empty
+Polyhedron::SetReferences: List 56416 is not empty
+Polyhedron::SetReferences: List 56417 is not empty
+Polyhedron::SetReferences: List 56419 is not empty
+Polyhedron::SetReferences: List 56420 is not empty
+Polyhedron::SetReferences: List 56421 is not empty
+Polyhedron::SetReferences: List 56422 is not empty
+Polyhedron::SetReferences: List 56423 is not empty
+Polyhedron::SetReferences: List 56424 is not empty
+Polyhedron::SetReferences: List 56425 is not empty
+Polyhedron::SetReferences: List 56426 is not empty
+Polyhedron::SetReferences: List 56427 is not empty
+Polyhedron::SetReferences: List 56428 is not empty
+Polyhedron::SetReferences: List 56429 is not empty
+Polyhedron::SetReferences: List 56430 is not empty
+Polyhedron::SetReferences: List 56431 is not empty
+Polyhedron::SetReferences: List 56432 is not empty
+Polyhedron::SetReferences: List 56434 is not empty
+Polyhedron::SetReferences: List 56435 is not empty
+Polyhedron::SetReferences: List 56436 is not empty
+Polyhedron::SetReferences: List 56437 is not empty
+Polyhedron::SetReferences: List 56438 is not empty
+Polyhedron::SetReferences: List 56600 is not empty
+Polyhedron::SetReferences: List 56601 is not empty
+Polyhedron::SetReferences: List 56602 is not empty
+Polyhedron::SetReferences: List 56603 is not empty
+Polyhedron::SetReferences: List 56604 is not empty
+Polyhedron::SetReferences: List 56605 is not empty
+Polyhedron::SetReferences: List 56607 is not empty
+Polyhedron::SetReferences: List 56608 is not empty
+Polyhedron::SetReferences: List 56609 is not empty
+Polyhedron::SetReferences: List 56610 is not empty
+Polyhedron::SetReferences: List 56611 is not empty
+Polyhedron::SetReferences: List 56612 is not empty
+Polyhedron::SetReferences: List 56613 is not empty
+Polyhedron::SetReferences: List 56614 is not empty
+Polyhedron::SetReferences: List 56615 is not empty
+Polyhedron::SetReferences: List 56616 is not empty
+Polyhedron::SetReferences: List 56617 is not empty
+Polyhedron::SetReferences: List 56618 is not empty
+Polyhedron::SetReferences: List 56619 is not empty
+Polyhedron::SetReferences: List 56620 is not empty
+Polyhedron::SetReferences: List 56622 is not empty
+Polyhedron::SetReferences: List 56623 is not empty
+Polyhedron::SetReferences: List 56624 is not empty
+Polyhedron::SetReferences: List 56625 is not empty
+Polyhedron::SetReferences: List 56626 is not empty
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server "localhost:10.0"
+      after 158 requests (158 known processed) with 5 events remaining.
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the region store while geometry closed !
+
+*************************************************************
+ Geant4 version Name: geant4-10-00-patch-01 [MT]   (28-February-2014)
+  << in Multi-threaded mode >> 
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+ G4Material WARNING: define a material with density=0 is not allowed. 
+ The material Vacuum will be constructed with the default minimal density: 1e-25g/cm3
+--- Warning from G4Material::G4Material() define a material with density=0 is not allowed. 
+ The material tbjcVacuum will be constructed with the default minimal density: 1e-25g/cm3
+Checking overlaps for volume HELIOS ... OK! 
+Checking overlaps for volume blocker_physical ... OK! 
+Checking overlaps for volume DownFrame_physical ... OK! 
+Checking overlaps for volume targetGas_physical ... OK! 
+Checking overlaps for volume targetWindow_physical ... OK! 
+Checking overlaps for volume targetWindow_physical ... OK! 
+Checking overlaps for volume ArrayContainer ... OK! 
+Checking overlaps for volume ArraySupport ... OK! 
+Checking overlaps for volume HELIOSback_physical ... OK! 
+Checking overlaps for volume HELIOSfront_physical ... OK! 
+Checking overlaps for volume heliosdoor_physical ... OK! 
+Checking overlaps for volume ionfront_physical ... 
+-------- WWWW ------- G4Exception-START -------- WWWW -------
+*** G4Exception : GeomVol1002
+      issued by : G4PVPlacement::CheckOverlaps()
+Overlap with volume already placed !
+          Overlap is detected for volume ionfront_physical
+          with heliosdoor_physical volume's
+          local point (-66.6927,-95.2202,38.4401), overlapping by at least: 226.56 um 
+NOTE: Reached maximum fixed number -1- of overlaps reports for this volume !
+*** This is just a warning message. ***
+-------- WWWW -------- G4Exception-END --------- WWWW -------
+
+Checking overlaps for volume IONshell_physical ... OK! 
+Checking overlaps for volume IONstartInside_physical ... OK! 
+Checking overlaps for volume IONwindow_physical ... OK! 
+Checking overlaps for volume IONinside_physical ... OK! 
+Checking overlaps for volume DEADSPACE ... OK! 
+Checking overlaps for volume Sec1 ... OK! 
+Checking overlaps for volume Sec2 ... OK! 
+Checking overlaps for volume Sec3 ... OK! 
+Checking overlaps for volume Sec4 ... OK! 
+Checking overlaps for volume Sec5 ... OK! 
+consctruct complete
+G4VDecayChannel::FillDaughters  [ eta_prime ]0:rho0 is not defined !!
+ The BR of this decay mode is set to zero 
+G4WT0 > 
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 >  Local thread RunManagerKernel version Name: geant4-10-00-patch-01 [MT]
+G4WT0 > ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+G4WT0 > 
+heyhey step creater
+G4WT0 > 
+G4WT0 > phot:   for  gamma    SubType= 12
+G4WT0 >       LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >        PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila
+G4WT0 > 
+G4WT0 > compt:   for  gamma    SubType= 13
+G4WT0 >       Lambda table from 100 eV  to 1 MeV in 28 bins, spline: 1
+G4WT0 >       LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >         KleinNishina :  Emin=        0 eV    Emax=       10 TeV
+G4WT0 > 
+G4WT0 > conv:   for  gamma    SubType= 14
+G4WT0 >       Lambda table from 1.022 MeV to 10 TeV in 49 bins, spline: 1
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >         BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+G4WT0 >      BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+G4WT0 > 
+G4WT0 > msc:   for e-    SubType= 10
+G4WT0 >       RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+G4WT0 >       ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+G4WT0 >             UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Current available graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRep (HepRepXML)
+  G4HepRepFile (HepRepFile)
+  OpenGLImmediateX (OGLI, OGLIX)
+  OpenGLStoredX (OGL, OGLS, OGLSX)
+  RayTracer (RayTracer)
+  VRML1FILE (VRML1FILE)
+  VRML2FILE (VRML2FILE)
+  gMocrenFile (gMocrenFile)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+Available colours:
+  black, blue, brown, cyan, gray, green, grey, magenta, red, white, yellow
+
+Available UI session types: [ GAG, tcsh, csh ]
+/control/saveHistory
+/run/verbose 2
+#
+# Visualization setting
+/control/execute vis.mac
+#
+# Macro file for exampleB5
+#
+# Set verbosity
+#
+/control/verbose 2
+#
+# Use this open statement to create an OpenGL view:
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+G4OpenGLXViewer::G4OpenGLXViewer couldn't open display.
+G4OpenGLStoredX::CreateViewer: error flagged by negative view id in G4OpenGLStoredXViewer creation.
+ Destroying view and returning null pointer.
+ERROR in G4VisManager::CreateViewer during OpenGLStoredX viewer creation.
+  No action taken.
+WARNING: No viewer created.
+#
+# Use this open statement to create a .prim file suitable for
+# viewing in DAWN:
+#/vis/open DAWNFILE
+#
+# Use this open statement to create a .heprep file suitable for
+# viewing in HepRApp:
+#/vis/open HepRepFile
+#
+# Use this open statement to create a .wrl file suitable for
+# viewing in a VRML viewer:
+#/vis/open VRML2FILE
+#
+# Disable auto refresh and quieten vis messages whilst scene and
+# trajectories are established:
+/vis/viewer/set/autoRefresh false
+ERROR: G4VisCommandsViewerSet::SetNewValue: no current viewer.
+/vis/verbose errors
+Visualization verbosity changed to errors (2)
+#
+# Draw geometry:
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world
+/vis/sceneHandler/attach
+#
+# Specify view angle:
+#/vis/viewer/set/viewpointThetaPhi 90. 0.
+#
+# Specify zoom value:
+/vis/viewer/zoom 1.2
+ERROR: G4VisCommandsViewerZoom::SetNewValue: no current viewer.
+#
+# Specify style (surface or wireframe):
+#/vis/viewer/set/style wireframe
+#
+# Draw coordinate axes:
+#/vis/scene/add/axes 0 0 0 1 m
+#
+# Draw smooth trajectories at end of event, showing trajectory points
+# as markers 2 pixels wide:
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+Attributes available for modeling and filtering with
+  "/vis/modeling/trajectories/create/drawByAttribute" and
+  "/vis/filtering/trajectories/create/attributeFilter" commands:
+G4TrajectoriesModel:
+  Event ID (EventID): G4int
+G4SmoothTrajectory:
+  Charge (Ch): unit: e+ (G4double)
+  Track ID (ID): G4int
+  Initial kinetic energy (IKE): G4BestUnit (G4double)
+  Initial momentum magnitude (IMag): G4BestUnit (G4double)
+  Initial momentum (IMom): G4BestUnit (G4ThreeVector)
+  No. of points (NTP): G4int
+  PDG Encoding (PDG): G4int
+  Parent ID (PID): G4int
+  Particle Name (PN): G4String
+G4SmoothTrajectoryPoint:
+  Auxiliary Point Position (Aux): G4BestUnit (G4ThreeVector)
+  Step Position (Pos): G4BestUnit (G4ThreeVector)
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+# (if too many tracks cause core dump => /tracking/storeTrajectory 0)
+#
+# Draw hits at end of event:
+#/vis/scene/add/hits
+#
+# To draw only gammas:
+#/vis/filtering/trajectories/create/particleFilter
+#/vis/filtering/trajectories/particleFilter-0/add gamma
+#
+# To invert the above, drawing all particles except gammas,
+# keep the above two lines but also add:
+#/vis/filtering/trajectories/particleFilter-0/invert true
+#
+# Many other options are available with /vis/modeling and /vis/filtering.
+# For example, to select colour by particle ID:
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/set e- blue
+#
+# To superimpose all of the events from a given run:
+#/vis/scene/endOfEventAction accumulate
+#
+# Re-establish auto refreshing and verbosity:
+/vis/viewer/set/autoRefresh true
+ERROR: G4VisCommandsViewerSet::SetNewValue: no current viewer.
+/vis/verbose warnings
+Visualization verbosity changed to warnings (3)
+#
+# For file-based drivers, use this to create an empty detector view:
+#/vis/viewer/flush
+#
+# Set visualization to accumulate events into one picture
+#
+/vis/scene/endOfEventAction accumulate
+WARNING: The vis manager will keep up to 100 events.
+  This may use a lot of memory.
+  It may be changed with, e.g., "/vis/scene/endOfEventAction accumulate 10".
+/vis/viewer/set/viewpointThetaPhi 90 0
+ERROR: G4VisCommandsViewerSet::SetNewValue: no current viewer.
+Idle> 

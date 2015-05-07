@@ -1,0 +1,65 @@
+	
+{
+    "Reaction":
+    {
+        "Elements":
+        {
+            "p0":{"Z":10,"A":20},
+            "p1":{"Z":2,"A":4},
+            "p2":
+            {
+                "Z":11,"A":23,
+                 "ExChance":
+                     [
+                     {"Ex":0,           "Chance":1},
+                     {"Ex":0.4399,      "Chance":1},
+                     {"Ex":2.076011,    "Chance":1},
+                     {"Ex":2.390732,    "Chance":1},
+                     {"Ex":2.63985,     "Chance":1},
+                     {"Ex":2.703500,    "Chance":1},
+                     {"Ex":2.982060,    "Chance":1},
+                     {"Ex":3.67760,     "Chance":1},
+                     {"Ex":3.848069,    "Chance":1},
+                     {"Ex":3.914239,    "Chance":1},
+                     {"Ex":4.42964,     "Chance":1},
+                     {"Ex":4.77461,     "Chance":1}
+                 ]
+            },
+            "p3":{"Z":1,"A":1}
+        },
+         "BeamEnergy":"88*MeV"
+    
+    }, 
+
+
+    "Target":
+    {
+  
+        "GasTarget":
+        {
+            "GasTargetFlangeRadius":"5*cm",
+            "GasTargetHoleRadius":"0.125*inch",
+            "GasTargetMetalThickness":"0.4*mm",
+            "GasTargetWindowThickness":"7*um",
+            "GasTargetFlangeWidth":"1*mm",
+            "GasTargetBallOutFactor":1,
+            "TargetPosition":"-10*cm",
+            "GasTargetGasT":"88*K",
+            "GasTargetGasP":"500*torr",
+            "TargetMaterial":"tbjcHe2",
+            "GasTargetReactionLength":"1*mm",
+            "ReactionLifeLength":"22*mm",
+            "BlockerRadius":"30*cm",
+            "BlockRecoils":1
+        }
+    },
+
+    "IonChamber":
+    {
+        "IonChamberGasType":"tbjcCF4",
+        "IonChamberGasP":"26.5*torr",
+        "IonChamberGasT":"293*K"
+    }
+       
+
+}

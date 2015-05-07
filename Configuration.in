@@ -1,0 +1,83 @@
+	
+{
+    "Reaction":
+    {
+           "Elements":
+        {
+            "p0":{"Z":10,"A":20},
+            "p1":{"Z":2,"A":4},
+            "p2":
+            {
+                "Z":11,"A":23,
+                 "ExChance":
+                     [
+                     {"Ex":0,      "Chance":1},
+                     {"Ex":0.4399, "Chance":1},
+                     {"Ex":2.076011,      "Chance":1},
+                     {"Ex":2.390732,      "Chance":1},
+                     {"Ex":2.63985,      "Chance":1},
+                     {"Ex":2.703500,      "Chance":1},
+                     {"Ex":2.982060,"Chance":1},
+                     {"Ex":3.67760,"Chance":1},
+                     {"Ex":3.848069,"Chance":1},
+                     {"Ex":3.914239,"Chance":1},
+                     {"Ex":4.42964,"Chance":1},
+                     {"Ex":4.77461,"Chance":1}
+                     ]
+            },
+            "p3":{"Z":1,"A":1}
+        },
+         "BeamEnergy":"60*MeV"
+ 
+    }, 
+
+
+    "Target":
+    {
+  
+        "SolidTarget":
+        {
+            "TargetPosition":"0*cm",
+            "SolidTargetRadius":"5*cm",
+            "TargetMaterial":"tbjcCD2",
+            "SolidTargetThickness":"5.72*um",
+            "ReactionLifeLength":"12*um",
+            "IsRecoilAbsorber":1,
+            "RecoilAbsorberPositionToTarget":"1*cm",
+            "RecoilAbsorberLength":"1*cm",
+            "RecoillAbsorberRadius":"3*cm"
+
+        }
+
+    },
+
+    "HELIOS":
+    {
+  
+            "MagneticFieldZ":"2.85*T",
+
+            "IsBlocker":1,
+            "BlockerPosition":"14*cm",
+            "BlockerLength":"25*um",
+            "BlockerRadius":"30*cm",
+
+            "IsRecoilStopper":1,
+            "StopperPosition":"103*cm",
+            "StopperLength":"2*cm",
+            "StopperRadius":"45*cm",
+
+
+            "ArrayPosition":"20*cm",          
+            "IsArrayShielded":0,
+            "IsArrayRotated":1          
+
+    },
+    "IonChamber":
+    {
+        "IonChamberGasType":"tbjcCF4",
+        "IonChamberGasP":"33*torr",
+        "IonChamberGasT":"293*K"
+    }
+       
+
+}
